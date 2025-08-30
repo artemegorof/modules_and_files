@@ -1,0 +1,56 @@
+Тест 1:
+Входные данные:
+print(compare_files('heisenberg_1.txt', 'heisenberg_2.txt'))
+
+Ожидаемый вывод:
+True
+------------------------------
+
+Тест 2:
+Входные данные:
+print(compare_files('starwars.txt', 'startrek.txt'))
+
+Ожидаемый вывод:
+False
+------------------------------
+
+Тест 3:
+Входные данные:
+print(compare_files('dwight_1.txt', 'dwight_2.txt'))
+
+Ожидаемый вывод:
+False
+------------------------------
+
+Тест 4:
+Входные данные:
+print(compare_files('dwight_3.txt', 'dwight_4.txt'))
+
+Ожидаемый вывод:
+True
+------------------------------
+
+Тест 5:
+Входные данные:
+print(compare_files('lotr_1.txt', 'lotr_2.txt'))
+
+Ожидаемый вывод:
+False
+------------------------------
+
+Тест 6:
+Входные данные:
+print(compare_files('empty.txt', 'not_empty.txt'))
+
+Ожидаемый вывод:
+False
+------------------------------
+
+Тест 7:
+Входные данные:
+print(compare_files('matrix_1.txt', 'matrix_2.txt'))
+
+Ожидаемый вывод:
+True
+------------------------------
+
