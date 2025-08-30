@@ -1,0 +1,32 @@
+Тест 1:
+Входные данные:
+print_file_content('breaking_bad.txt')
+
+Ожидаемый вывод:
+Say my name!
+You're goddamn right.
+------------------------------
+
+Тест 2:
+Входные данные:
+print_file_content('office.txt')
+
+Ожидаемый вывод:
+Identity theft
+is not a joke, Jim!
+Millions of families
+suffer every year!
+------------------------------
+
+Тест 3:
+Входные данные:
+print_file_content('doge.txt')
+
+Ожидаемый вывод:
+such
+file
+very
+read
+wow!!!
+------------------------------
+
