@@ -1,0 +1,40 @@
+Тест 1:
+Входные данные:
+print(longest_palindrome('secret_code.txt'))
+
+Ожидаемый вывод:
+racecar
+------------------------------
+
+Тест 2:
+Входные данные:
+print(longest_palindrome('sci_fi_minds.txt'))
+
+Ожидаемый вывод:
+Hannah
+------------------------------
+
+Тест 3:
+Входные данные:
+print(longest_palindrome('palindrome_overdose.txt'))
+
+Ожидаемый вывод:
+rotator
+------------------------------
+
+Тест 4:
+Входные данные:
+print(longest_palindrome('all_caps.txt'))
+
+Ожидаемый вывод:
+DEIFIED
+------------------------------
+
+Тест 5:
+Входные данные:
+print(longest_palindrome('mixed_case.txt'))
+
+Ожидаемый вывод:
+Anna
+------------------------------
+
