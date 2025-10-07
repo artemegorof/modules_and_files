@@ -1,0 +1,30 @@
+Тест 1:
+Входные данные:
+print_first_two_lines('chat_susan.txt')
+
+
+Ожидаемый вывод:
+Hi, I can't access my account.
+Did you recently change your password?
+------------------------------
+
+Тест 2:
+Входные данные:
+print_first_two_lines('chat_daniel.txt')
+
+
+Ожидаемый вывод:
+Good morning!
+Is this the tech support chat?
+------------------------------
+
+Тест 3:
+Входные данные:
+print_first_two_lines('chat_julia.txt')
+
+
+Ожидаемый вывод:
+Please cancel my order.
+I placed it by mistake.
+------------------------------
+

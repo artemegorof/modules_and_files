@@ -1,0 +1,30 @@
+Тест 1:
+Входные данные:
+print_first_and_last_line('chat_alice.txt')
+
+
+Ожидаемый вывод:
+Hello, I need help with my order.
+Thank you, I finally received it!
+------------------------------
+
+Тест 2:
+Входные данные:
+print_first_and_last_line('chat_bob.txt')
+
+
+Ожидаемый вывод:
+Is your product compatible with iPhone?
+Is your product compatible with iPhone?
+------------------------------
+
+Тест 3:
+Входные данные:
+print_first_and_last_line('chat_carla.txt')
+
+
+Ожидаемый вывод:
+I want to cancel my subscription.
+Thanks for your support.
+------------------------------
+
