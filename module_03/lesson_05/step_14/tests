@@ -1,0 +1,97 @@
+Тест 1:
+Входные данные:
+print(get_unique_words('beatles_song.txt'))
+
+Ожидаемый вывод:
+['all', 'is', 'love', 'need', 'you']
+
+------------------------------
+
+Тест 2:
+Входные данные:
+print(get_unique_words('gandalf_wisdom.txt'))
+
+Ожидаемый вывод:
+['all', 'choose', 'decide', 'do', 'given', 'have', 'is', 'that', 'the', 'time', 'to', 'us', 'we', 'what', 'will', 'with', 'you']
+------------------------------
+
+Тест 3:
+Входные данные:
+print(get_unique_words('zelda_legend.txt'))
+
+Ожидаемый вывод:
+['again', 'alone', 'dangerous', 'go', 'it', 'its', 'take', 'this', 'to']
+------------------------------
+
+Тест 4:
+Входные данные:
+print(get_unique_words('president_speech.txt'))
+
+Ожидаемый вывод:
+['doubts', 'is', 'leader', 'limit', 'of', 'only', 'our', 'realization', 'said', 'the', 'to', 'today', 'tomorrow', 'wise']
+------------------------------
+
+Тест 5:
+Входные данные:
+print(get_unique_words('word_madness.txt'))
+
+Ожидаемый вывод:
+['and', 'even', 'many', 'more', 'so', 'words']
+------------------------------
+
+Тест 6:
+Входные данные:
+print(get_unique_words('shawshank_hope.txt'))
+
+Ожидаемый вывод:
+['a', 'and', 'best', 'dies', 'ever', 'good', 'hope', 'is', 'maybe', 'no', 'of', 'the', 'thing', 'things']
+------------------------------
+
+Тест 7:
+Входные данные:
+print(get_unique_words('shadow_ops.txt'))
+
+Ожидаемый вывод:
+['always', 'dark', 'in', 'shadow', 'the']
+------------------------------
+
+Тест 8:
+Входные данные:
+print(get_unique_words('to_be_or_not.txt'))
+
+Ожидаемый вывод:
+['be', 'is', 'maybe', 'not', 'or', 'question', 'that', 'the']
+------------------------------
+
+Тест 9:
+Входные данные:
+print(get_unique_words('karaoke_night.txt'))
+
+Ожидаемый вывод:
+ ['believing', 'dont', 'stop']
+------------------------------
+
+Тест 10:
+Входные данные:
+print(get_unique_words('galaxy_guardians.txt'))
+
+Ожидаемый вывод:
+ ['am', 'groot', 'i']
+------------------------------
+
+Тест 11:
+Входные данные:
+print(get_unique_words('matrix_quote.txt'))
+
+Ожидаемый вывод:
+ ['do', 'is', 'no', 'only', 'spoon', 'there', 'try']
+------------------------------
+
+Тест 12:
+Входные данные:
+print(get_unique_words('harry_potter.txt'))
+
+Ожидаемый вывод:
+ ['am', 'good', 'i', 'no', 'solemnly', 'swear', 'that', 'to', 'up']
+------------------------------
+

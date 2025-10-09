@@ -1,0 +1,64 @@
+Тест 1:
+Входные данные:
+print(most_talkative_line('one_line.txt'))
+
+Ожидаемый вывод:
+Hello darkness, my old friend
+------------------------------
+
+Тест 2:
+Входные данные:
+print(most_talkative_line('silence_then_speech.txt'))
+
+Ожидаемый вывод:
+You talkin' to me?
+------------------------------
+
+Тест 3:
+Входные данные:
+print(most_talkative_line('equal_length_quotes.txt'))
+
+Ожидаемый вывод:
+You shall not pass!
+------------------------------
+
+Тест 4:
+Входные данные:
+print(most_talkative_line('got_quotes.txt'))
+
+Ожидаемый вывод:
+That's what I do, I drink and I know things.
+------------------------------
+
+Тест 5:
+Входные данные:
+print(most_talkative_line('titanic.txt'))
+
+Ожидаемый вывод:
+I'm the king of the world!
+------------------------------
+
+Тест 6:
+Входные данные:
+print(most_talkative_line('finding_nemo.txt'))
+
+Ожидаемый вывод:
+Just keep swimming
+------------------------------
+
+Тест 7:
+Входные данные:
+print(most_talkative_line('hamlet.txt'))
+
+Ожидаемый вывод:
+Whether tis nobler in the mind
+------------------------------
+
+Тест 8:
+Входные данные:
+print(most_talkative_line('alphabet_test.txt'))
+
+Ожидаемый вывод:
+The quick brown fox jumps over the lazy dog.
+------------------------------
+
