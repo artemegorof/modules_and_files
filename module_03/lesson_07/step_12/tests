@@ -1,0 +1,54 @@
+Тест 1:
+Входные данные:
+print(word_frequencies('greeting.txt'))
+
+
+Ожидаемый вывод:
+{'ПРИВЕТ': 2, 'КАК': 1, 'ДЕЛА': 1, 'ХОРОШО': 1}
+------------------------------
+
+Тест 2:
+Входные данные:
+print(word_frequencies('english_quotes.txt'))
+
+
+Ожидаемый вывод:
+{'LIVE': 1, 'LAUGH': 1, 'LOVE': 2, 'YOURSELF': 1}
+------------------------------
+
+Тест 3:
+Входные данные:
+print(word_frequencies('mixed_case.txt'))
+
+
+Ожидаемый вывод:
+{'HELLO': 3, 'WORLD': 2}
+------------------------------
+
+Тест 4:
+Входные данные:
+print(word_frequencies('one_word.txt'))
+
+
+Ожидаемый вывод:
+{'СЛОВО': 6}
+------------------------------
+
+Тест 5:
+Входные данные:
+print(word_frequencies('russian_poem.txt'))
+
+
+Ожидаемый вывод:
+{'МИР': 2, 'ТЕБЕ': 2, 'НАШ': 1, 'ДОМ': 1, 'РОДНОЙ': 1, 'И': 1, 'СВЕТЛЫЙ': 1, 'ЗНОЙ': 1}
+------------------------------
+
+Тест 6:
+Входные данные:
+print(word_frequencies('lorem.txt'))
+
+
+Ожидаемый вывод:
+{'LOREM': 3, 'IPSUM': 4, 'DOLOR': 2, 'SIT': 8, 'AMET': 8, 'CONSECTETUR': 2, 'ADIPISCING': 1, 'ELIT': 5, 'CRAS': 5, 'EUISMOD': 2, 'EX': 5, 'A': 6, 'ANTE': 5, 'SOLLICITUDIN': 3, 'GRAVIDA': 3, 'MASSA': 6, 'BIBENDUM': 3, 'PELLENTESQUE': 8, 'QUIS': 6, 'MI': 4, 'ULTRICIES': 3, 'PURUS': 3, 'PLACERAT': 3, 'ALIQUAM': 4, 'SAPIEN': 5, 'MORBI': 5, 'FRINGILLA': 5, 'VELIT': 3, 'AT': 10, 'LOBORTIS': 1, 'INTERDUM': 4, 'AUGUE': 4, 'FAUCIBUS': 3, 'NUNC': 6, 'ET': 6, 'ULLAMCORPER': 5, 'NISL': 2, 'VITAE': 5, 'RISUS': 3, 'FUSCE': 1, 'MAGNA': 4, 'JUSTO': 2, 'SUSCIPIT': 3, 'VEL': 6, 'CURSUS': 4, 'NON': 5, 'CONSEQUAT': 4, 'TEMPOR': 6, 'NULLA': 10, 'SED': 7, 'VULPUTATE': 5, 'METUS': 3, 'IACULIS': 3, 'EFFICITUR': 5, 'MAURIS': 6, 'SODALES': 3, 'DIAM': 4, 'CONGUE': 6, 'IN': 11, 'TORTOR': 4, 'TEMPUS': 3, 'ELEIFEND': 2, 'CURABITUR': 3, 'EU': 6, 'ENIM': 2, 'QUISQUE': 4, 'ERAT': 1, 'VOLUTPAT': 3, 'MALESUADA': 3, 'PULVINAR': 4, 'VESTIBULUM': 4, 'POSUERE': 3, 'LEO': 4, 'TURPIS': 3, 'CONVALLIS': 4, 'LIBERO': 4, 'SEMPER': 6, 'ELEMENTUM': 4, 'URNA': 3, 'FACILISI': 1, 'NEC': 1, 'NIBH': 5, 'MAECENAS': 4, 'LIGULA': 4, 'EGET': 5, 'DICTUM': 1, 'PHASELLUS': 4, 'PHARETRA': 1, 'SAGITTIS': 1, 'QUAM': 5, 'ETIAM': 2, 'EROS': 3, 'DONEC': 5, 'FELIS': 5, 'LECTUS': 1, 'VIVAMUS': 1, 'FINIBUS': 2, 'INTEGER': 1, 'PRETIUM': 1, 'NAM': 2, 'MOLLIS': 2, 'SCELERISQUE': 2, 'VIVERRA': 1, 'ARCU': 4, 'EST': 4, 'PRAESENT': 2, 'VEHICULA': 2, 'ACCUMSAN': 2, 'LAOREET': 3, 'RUTRUM': 4, 'DIGNISSIM': 3, 'AC': 9, 'DUIS': 3, 'LUCTUS': 2, 'HENDRERIT': 2, 'TINCIDUNT': 5, 'ID': 2, 'BLANDIT': 3, 'ALIQUET': 3, 'LACUS': 3, 'RHONCUS': 1, 'ODIO': 2, 'MAXIMUS': 1, 'COMMODO': 1, 'EGESTAS': 3, 'LACINIA': 3, 'UT': 4, 'MATTIS': 2, 'FACILISIS': 1, 'NISI': 2, 'NEQUE': 1, 'PORTTITOR': 1, 'VARIUS': 1, 'ULTRICES': 1, 'TELLUS': 1, 'HABITANT': 1, 'TRISTIQUE': 1, 'SENECTUS': 1, 'NETUS': 1, 'FAMES': 1, 'DAPIBUS': 1, 'MOLESTIE': 1, 'NULLAM': 1}
+------------------------------
+
