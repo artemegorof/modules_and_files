@@ -1,0 +1,2 @@
+apple Banana banana APPLE
+fruit Fruit juice JUICE
