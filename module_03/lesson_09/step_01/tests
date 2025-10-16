@@ -1,0 +1,45 @@
+Тест 1:
+Входные данные:
+save_shopping_list(['Хлеб', 'Молоко', 'Яйца'])
+
+with open('shopping.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Список покупок:
+1. Хлеб
+2. Молоко
+3. Яйца
+------------------------------
+
+Тест 2:
+Входные данные:
+save_shopping_list(["Apples", "Bananas", "Carrots", "Dates", "Eggs"])
+
+with open('shopping.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Список покупок:
+1. Apples
+2. Bananas
+3. Carrots
+4. Dates
+5. Eggs
+------------------------------
+
+Тест 3:
+Входные данные:
+save_shopping_list(["Шампунь", "Мыло", "Зубная паста", "Полотенце"])
+
+with open('shopping.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Список покупок:
+1. Шампунь
+2. Мыло
+3. Зубная паста
+4. Полотенце
+------------------------------
+

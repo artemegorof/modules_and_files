@@ -1,0 +1,100 @@
+Тест 1:
+Входные данные:
+reverse_lines('terminator.txt')
+
+with open('reversed.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Hasta la vista, baby
+Say hello to my little friend
+I'll be back
+------------------------------
+
+Тест 2:
+Входные данные:
+reverse_lines('dialog.txt')
+
+with open('reversed.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Ну, в теории, да
+Это не баг, это поведение
+Без паники!
+На проде работает
+Да кто ж его знает
+Баг? Это фича
+Ничего не трогайте, сейчас всё будет
+Я инженер, а не волшебник!
+Купите слона!
+А вы точно из техподдержки?
+------------------------------
+
+Тест 3:
+Входные данные:
+reverse_lines('just_one.txt')
+
+with open('reversed.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Winter is coming
+------------------------------
+
+Тест 4:
+Входные данные:
+reverse_lines('memes_rus.txt')
+
+with open('reversed.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Ты это... заходи, если что
+Понятно, но не очень
+Я у мамы программист
+------------------------------
+
+Тест 5:
+Входные данные:
+reverse_lines('empty_mixed.txt')
+
+with open('reversed.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Слово — не воробей
+
+
+Пробел — это тоже символ
+
+Мама мыла раму
+
+Просто добавь воды
+------------------------------
+
+Тест 6:
+Входные данные:
+reverse_lines('random_lines.txt')
+
+with open('reversed.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Но это не точно
+
+
+Как-то само собой
+
+А потом всё работает
+
+
+Просто пустая строка
+
+И те, кто не ставит
+
+Те, кто ставит точку с запятой
+
+Люди делятся на два типа
+------------------------------
+
