@@ -1,0 +1,52 @@
+Тест 1:
+Входные данные:
+clean_file('star_wars.txt')
+
+with open('cleaned.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+It's over, Anakin.
+I have the high ground.
+You underestimate my power.
+Don't try it.
+
+------------------------------
+
+Тест 2:
+Входные данные:
+clean_file('who_are_you.txt')
+
+with open('cleaned.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Ты кто такой?
+Давай, до свидания!
+------------------------------
+
+Тест 3:
+Входные данные:
+clean_file('diary_russia.txt')
+
+with open('cleaned.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Сегодня мы выехали из Ярославля.
+Погода была пасмурная.
+Пустых дорог больше не будет.
+Теперь начнётся самое интересное.
+------------------------------
+
+Тест 4:
+Входные данные:
+clean_file('single_line.txt')
+
+with open('cleaned.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+One real line here.
+------------------------------
+

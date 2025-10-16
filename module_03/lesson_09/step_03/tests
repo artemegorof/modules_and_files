@@ -1,0 +1,78 @@
+Тест 1:
+Входные данные:
+remove_duplicate_lines('meetings.txt', 'cleaned_meetings.txt')
+
+with open('cleaned_meetings.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Monday standup
+Sprint planning
+Review
+Retrospective
+
+------------------------------
+
+Тест 2:
+Входные данные:
+remove_duplicate_lines('case_sensitive.txt', 'hello.txt')
+
+with open('hello.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+hello
+Hello
+HELLO
+------------------------------
+
+Тест 3:
+Входные данные:
+remove_duplicate_lines('long_repeat.txt', 'clean_long_repeat.txt')
+
+with open('clean_long_repeat.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+This is the way.
+------------------------------
+
+Тест 4:
+Входные данные:
+remove_duplicate_lines('empty_lines.txt', 'clean_empty_lines.txt')
+
+with open('clean_empty_lines.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+The cake is a lie.
+------------------------------
+
+Тест 5:
+Входные данные:
+remove_duplicate_lines('no_duplicates.txt', 'clean_no_duplicates.txt')
+
+with open('clean_no_duplicates.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Luke
+Leia
+Han
+Chewbacca
+Yoda
+------------------------------
+
+Тест 6:
+Входные данные:
+remove_duplicate_lines('simple_lines.txt', 'clean_simple_lines.txt')
+
+with open('clean_simple_lines.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+One
+Two
+Three
+------------------------------
+
