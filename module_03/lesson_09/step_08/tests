@@ -1,0 +1,67 @@
+Тест 1:
+Входные данные:
+results = {
+    "Python": 38,
+    "JavaScript": 25,
+    "C++": 12,
+    "Java": 17
+}
+export_poll_results(results)
+
+with open('results.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Результаты опроса:
+1. Python — 38 голосов
+2. JavaScript — 25 голосов
+3. Java — 17 голосов
+4. C++ — 12 голосов
+------------------------------
+
+Тест 2:
+Входные данные:
+results = {
+    "Swift": 8,
+    "Kotlin": 2,
+    "Java": 15,
+    "Ruby": 5,
+    "Pascal": 3,
+    "Basic": 1,
+}
+export_poll_results(results)
+
+with open('results.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Результаты опроса:
+1. Java — 15 голосов
+2. Swift — 8 голосов
+3. Ruby — 5 голосов
+4. Pascal — 3 голосов
+5. Kotlin — 2 голосов
+6. Basic — 1 голосов
+------------------------------
+
+Тест 3:
+Входные данные:
+results = {
+    "Rust": 40,
+    "Go": 60,
+    "Python": 78,
+    "C": 10
+}
+export_poll_results(results)
+
+with open('results.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Результаты опроса:
+1. Python — 78 голосов
+2. Go — 60 голосов
+3. Rust — 40 голосов
+4. C — 10 голосов
+------------------------------
+

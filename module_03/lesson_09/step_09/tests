@@ -1,0 +1,81 @@
+Тест 1:
+Входные данные:
+export_poll_results(
+    {"Python": 38, "JavaScript": 25},
+    {"Python": 12, "C++": 15, "Java": 17}
+)
+
+with open('results.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Итоги общего голосования:
+1. Python — 50 голосов
+2. JavaScript — 25 голосов
+3. Java — 17 голосов
+4. C++ — 15 голосов
+------------------------------
+
+Тест 2:
+Входные данные:
+export_poll_results(
+    {"Python": 12, "C++": 8, "Go": 9, "Swift": 6},
+    {"Rust": 12, "Kotlin": 8, "Ruby": 6},
+    {"Python": 3, "Go": 6, "Swift": 4, "Rust": 1},
+    {"Kotlin": 2, "Ruby": 4, "JavaScript": 7}
+)
+
+with open('results.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Итоги общего голосования:
+1. Go, Python — 15 голосов
+2. Rust — 13 голосов
+3. Kotlin, Ruby, Swift — 10 голосов
+4. C++ — 8 голосов
+5. JavaScript — 7 голосов
+------------------------------
+
+Тест 3:
+Входные данные:
+devs = {"Python": 30, "Java": 10, "Rust": 25, "C#": 5}
+test = {"Python": 20, "Go": 15, "JavaScript": 10, "C++": 7}
+analyst = {"Kotlin": 12, "JavaScript": 5, "Rust": 10}
+export_poll_results(devs, test, analyst)
+
+with open('results.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Итоги общего голосования:
+1. Python — 50 голосов
+2. Rust — 35 голосов
+3. Go, JavaScript — 15 голосов
+4. Kotlin — 12 голосов
+5. Java — 10 голосов
+6. C++ — 7 голосов
+7. C# — 5 голосов
+------------------------------
+
+Тест 4:
+Входные данные:
+export_poll_results(
+    {"Python": 20, "Java": 15, "C++": 10, "Go": 5},
+    {"Rust": 25, "Java": 10, "Kotlin": 20},
+    {"C": 15, "JavaScript": 10, "Go": 15, "Kotlin": 5},
+    {"Swift": 12, "Python": 10, "Go": 5}
+)
+
+with open('results.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Итоги общего голосования:
+1. Python — 30 голосов
+2. Go, Java, Kotlin, Rust — 25 голосов
+3. C — 15 голосов
+4. Swift — 12 голосов
+5. C++, JavaScript — 10 голосов
+------------------------------
+
