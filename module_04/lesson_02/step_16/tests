@@ -1,0 +1,16 @@
+Тест 1:
+Входные данные:
+find_best_manager("sales_small.json")
+
+Ожидаемый вывод:
+Wendell Fortescue 25265
+------------------------------
+
+Тест 2:
+Входные данные:
+find_best_manager("sales.json")
+
+Ожидаемый вывод:
+Sharity Devonside 103690
+------------------------------
+
