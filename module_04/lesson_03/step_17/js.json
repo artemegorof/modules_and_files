@@ -1,0 +1,10 @@
+[
+  {"user": "john", "text": "finally understood promises", "likes": 9},
+  {"user": "maria", "text": "callbacks nightmare", "likes": 6},
+  {"user": "artem", "text": "async/await rocks!", "likes": 17},
+  {"user": "alex", "text": "love arrow functions", "likes": 8},
+  {"user": "nick", "text": "too many frameworks 😅", "likes": 7},
+  {"user": "kate", "text": "JS is everywhere!", "likes": 13},
+  {"user": "ivan", "text": "not a fan of JS", "likes": 4},
+  {"user": "dmitry", "text": "frontend rules!", "likes": 15}
+]

@@ -1,0 +1,10 @@
+[
+  {"user": "artem", "text": "python easy to learn", "likes": 14},
+  {"user": "maria", "text": "functions are elegant", "likes": 10},
+  {"user": "artem", "text": "love list comprehensions", "likes": 8},
+  {"user": "john", "text": "finally learned decorators", "likes": 15},
+  {"user": "kate", "text": "python ❤️", "likes": 20},
+  {"user": "ivan", "text": "dataclasses are great", "likes": 12},
+  {"user": "alex", "text": "python 3.12 is cool", "likes": 9},
+  {"user": "nick", "text": "why tabs instead of braces?", "likes": 5}
+]

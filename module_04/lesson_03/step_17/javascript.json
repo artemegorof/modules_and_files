@@ -1,0 +1,5 @@
+[
+  {"user": "john", "text": "js forever!", "likes": 11},
+  {"user": "maria", "text": "frontend queen 👑", "likes": 18},
+  {"user": "alex", "text": "good for web", "likes": 10}
+]

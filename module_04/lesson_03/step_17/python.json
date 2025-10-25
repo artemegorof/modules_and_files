@@ -1,0 +1,6 @@
+[
+  {"user": "artem", "text": "python rocks!", "likes": 20},
+  {"user": "maria", "text": "learning fast", "likes": 12},
+  {"user": "artem", "text": "love it", "likes": 8},
+  {"user": "ivan", "text": "easy to use", "likes": 15}
+]

@@ -1,0 +1,10 @@
+[
+  {"user": "maria", "text": "ownership is hard", "likes": 11},
+  {"user": "alex", "text": "love borrow checker", "likes": 14},
+  {"user": "nick", "text": "rust fast and safe", "likes": 10},
+  {"user": "artem", "text": "rust feels powerful", "likes": 13},
+  {"user": "ivan", "text": "hard to compile 😅", "likes": 9},
+  {"user": "dmitry", "text": "cargo is awesome", "likes": 11},
+  {"user": "john", "text": "memory safety ❤️", "likes": 10},
+  {"user": "kate", "text": "so strict, but I like it", "likes": 8}
+]
