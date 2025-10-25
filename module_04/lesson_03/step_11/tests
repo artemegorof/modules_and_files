@@ -1,182 +1,56 @@
 Тест 1:
 Входные данные:
-export_poll_results(
-    {"Python": 21, "JavaScript": 25, "C++": 10},
-    {"Python": 12, "C++": 15, "Java": 17}
-)
+content = {
+    "name": "Артем",
+    "age": 35,
+    "hobbies": ["теннис", "чтение", "программирование"],
+    "is_student": False
+}
 
-with open('results.json', 'r', encoding='utf-8') as f:
+save_profile(content)
+
+with open('profile.json', 'r', encoding='utf-8') as f:
     print(f.read())
 
 Ожидаемый вывод:
-[
-  {
-    "languages": [
-      "Python"
-    ],
-    "votes": 33,
-    "percent": 33.0
-  },
-  {
-    "languages": [
-      "C++",
-      "JavaScript"
-    ],
-    "votes": 25,
-    "percent": 25.0
-  },
-  {
-    "languages": [
-      "Java"
-    ],
-    "votes": 17,
-    "percent": 17.0
-  }
-]
+{
+  "name": "Артем",
+  "age": 35,
+  "hobbies": [
+    "теннис",
+    "чтение",
+    "программирование"
+  ],
+  "is_student": false
+}
 ------------------------------
 
 Тест 2:
 Входные данные:
-export_poll_results(
-    {"Python": 10, "Rust": 5, "Go": 15},
-    {"Python": 20, "Java": 20, "C++": 5,},
-    {"Rust": 15, "Kotlin": 10}
-)
+profile = {
+    "name": "Мария",
+    "age": 28,
+    "city": "Санкт-Петербург",
+    "languages": ["Python", "JavaScript"],
+    "subscribed": None
+}
 
-with open('results.json', 'r', encoding='utf-8') as f:
+save_profile(profile)
+
+with open('profile.json', 'r', encoding='utf-8') as f:
     print(f.read())
 
 Ожидаемый вывод:
-[
-  {
-    "languages": [
-      "Python"
-    ],
-    "votes": 30,
-    "percent": 30.0
-  },
-  {
-    "languages": [
-      "Java",
-      "Rust"
-    ],
-    "votes": 20,
-    "percent": 20.0
-  },
-  {
-    "languages": [
-      "Go"
-    ],
-    "votes": 15,
-    "percent": 15.0
-  },
-  {
-    "languages": [
-      "Kotlin"
-    ],
-    "votes": 10,
-    "percent": 10.0
-  },
-  {
-    "languages": [
-      "C++"
-    ],
-    "votes": 5,
-    "percent": 5.0
-  }
-]
-------------------------------
+{
+  "name": "Мария",
+  "age": 28,
+  "city": "Санкт-Петербург",
+  "languages": [
+    "Python",
+    "JavaScript"
+  ],
+  "subscribed": null
+}
 
-Тест 3:
-Входные данные:
-export_poll_results(
-    {"Python": 50, "Rust": 50, "Go": 30},
-    {"Kotlin": 20, "C++": 10, "Java": 10},
-    {"Swift": 10, "Ruby": 10, "Go": 10}
-)
-
-with open('results.json', 'r', encoding='utf-8') as f:
-    print(f.read())
-
-Ожидаемый вывод:
-[
-  {
-    "languages": [
-      "Python",
-      "Rust"
-    ],
-    "votes": 50,
-    "percent": 25.0
-  },
-  {
-    "languages": [
-      "Go"
-    ],
-    "votes": 40,
-    "percent": 20.0
-  },
-  {
-    "languages": [
-      "Kotlin"
-    ],
-    "votes": 20,
-    "percent": 10.0
-  },
-  {
-    "languages": [
-      "C++",
-      "Java",
-      "Ruby",
-      "Swift"
-    ],
-    "votes": 10,
-    "percent": 5.0
-  }
-]
-------------------------------
-
-Тест 4:
-Входные данные:
-export_poll_results(
-    {"Python": 10, "C++": 12, "Go": 15},
-    {"Rust": 15, "Kotlin": 15, "Ruby": 5},
-    {"Java": 15, "C": 12, "Python": 5},
-    {"Swift": 12, "JavaScript": 12}
-)
-
-with open('results.json', 'r', encoding='utf-8') as f:
-    print(f.read())
-
-Ожидаемый вывод:
-[
-  {
-    "languages": [
-      "Go",
-      "Java",
-      "Kotlin",
-      "Python",
-      "Rust"
-    ],
-    "votes": 15,
-    "percent": 11.71875
-  },
-  {
-    "languages": [
-      "C",
-      "C++",
-      "JavaScript",
-      "Swift"
-    ],
-    "votes": 12,
-    "percent": 9.375
-  },
-  {
-    "languages": [
-      "Ruby"
-    ],
-    "votes": 5,
-    "percent": 3.90625
-  }
-]
 ------------------------------
 

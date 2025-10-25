@@ -1,0 +1,85 @@
+Тест 1:
+Входные данные:
+save_profile(
+    name="Артем",
+    age=35,
+    city="Москва",
+    hobbies=["теннис", "чтение", "программирование"]
+)
+
+with open('profile.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+{
+  "name": "Артем",
+  "age": 35,
+  "city": "Москва",
+  "hobbies": [
+    "теннис",
+    "чтение",
+    "программирование"
+  ]
+}
+------------------------------
+
+Тест 2:
+Входные данные:
+save_profile(
+    name="Андрей",
+    age=40,
+    occupation="Data Engineer",
+    country="Россия",
+    compact=True,
+    sort=True
+)
+
+with open('profile.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+
+Ожидаемый вывод:
+{"age": 40, "country": "Россия", "name": "Андрей", "occupation": "Data Engineer"}
+
+------------------------------
+
+Тест 3:
+Входные данные:
+save_profile(
+    name="Мария",
+    age=28,
+    city="Санкт-Петербург",
+    subscribed=None,
+    sort=True
+)
+
+with open('profile.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+{
+  "age": 28,
+  "city": "Санкт-Петербург",
+  "name": "Мария",
+  "subscribed": null
+}
+------------------------------
+
+Тест 4:
+Входные данные:
+save_profile(
+    compact=True,
+    name="Мария",
+    age=28,
+    city="Санкт-Петербург",
+    subscribed=None,
+    sort=False,
+)
+
+with open('profile.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+{"name": "Мария", "age": 28, "city": "Санкт-Петербург", "subscribed": null}
+------------------------------
+

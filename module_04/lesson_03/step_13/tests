@@ -1,0 +1,439 @@
+Тест 1:
+Входные данные:
+comments = [
+    {"user": "Артем", "text": "Отличный урок!", "likes": 12},
+    {"user": "Мария", "text": "Спасибо, всё понятно", "likes": 8},
+    {"user": "John", "text": "Great explanation!", "likes": 15}
+]
+
+export_comments(comments, "comments.json")
+
+with open('comments.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+[
+  {
+    "user": "Артем",
+    "text": "Отличный урок!",
+    "likes": 12
+  },
+  {
+    "user": "Мария",
+    "text": "Спасибо, всё понятно",
+    "likes": 8
+  },
+  {
+    "user": "John",
+    "text": "Great explanation!",
+    "likes": 15
+  }
+]
+------------------------------
+
+Тест 2:
+Входные данные:
+comments = [
+    {"user": "Артем", "text": "Отличный урок!", "likes": 12},
+    {"user": "Мария", "text": "Спасибо, всё понятно", "likes": 8},
+    {"user": "John", "text": "Great explanation!", "likes": 15}
+]
+
+export_comments(comments, "sorted_desc.json", reverse=True)
+
+with open('sorted_desc.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+[
+  {
+    "user": "John",
+    "text": "Great explanation!",
+    "likes": 15
+  },
+  {
+    "user": "Артем",
+    "text": "Отличный урок!",
+    "likes": 12
+  },
+  {
+    "user": "Мария",
+    "text": "Спасибо, всё понятно",
+    "likes": 8
+  }
+]
+------------------------------
+
+Тест 3:
+Входные данные:
+
+comments = [
+    {"user": "Анна", "text": "Спасибо за урок!", "likes": 3},
+    {"user": "John", "text": "Very clear explanation", "likes": 12},
+    {"user": "Мария", "text": "Супер!", "likes": 8},
+    {"user": "Игорь", "text": "Было трудно, но понял", "likes": 5},
+    {"user": "Alex", "text": "Good examples", "likes": 11},
+    {"user": "Ольга", "text": "Лучший курс!", "likes": 15},
+    {"user": "Dmitry", "text": "Немного затянуто", "likes": 2},
+    {"user": "Kate", "text": "Great pace and content", "likes": 9},
+    {"user": "Евгений", "text": "Добавьте больше задач", "likes": 4},
+    {"user": "Sophia", "text": "Perfect for beginners", "likes": 6},
+    {"user": "Николай", "text": "Огонь!", "likes": 13},
+    {"user": "Julia", "text": "Loved it!", "likes": 7},
+    {"user": "Artem", "text": "Понятно, чётко, сжато", "likes": 10}
+]
+
+export_comments(comments, "comments_sorted_asc.json", reverse=False )
+
+with open('comments_sorted_asc.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+[
+  {
+    "user": "Dmitry",
+    "text": "Немного затянуто",
+    "likes": 2
+  },
+  {
+    "user": "Анна",
+    "text": "Спасибо за урок!",
+    "likes": 3
+  },
+  {
+    "user": "Евгений",
+    "text": "Добавьте больше задач",
+    "likes": 4
+  },
+  {
+    "user": "Игорь",
+    "text": "Было трудно, но понял",
+    "likes": 5
+  },
+  {
+    "user": "Sophia",
+    "text": "Perfect for beginners",
+    "likes": 6
+  },
+  {
+    "user": "Julia",
+    "text": "Loved it!",
+    "likes": 7
+  },
+  {
+    "user": "Мария",
+    "text": "Супер!",
+    "likes": 8
+  },
+  {
+    "user": "Kate",
+    "text": "Great pace and content",
+    "likes": 9
+  },
+  {
+    "user": "Artem",
+    "text": "Понятно, чётко, сжато",
+    "likes": 10
+  },
+  {
+    "user": "Alex",
+    "text": "Good examples",
+    "likes": 11
+  },
+  {
+    "user": "John",
+    "text": "Very clear explanation",
+    "likes": 12
+  },
+  {
+    "user": "Николай",
+    "text": "Огонь!",
+    "likes": 13
+  },
+  {
+    "user": "Ольга",
+    "text": "Лучший курс!",
+    "likes": 15
+  }
+]
+------------------------------
+
+Тест 4:
+Входные данные:
+comments = [
+    {"user": "Анна", "text": "Спасибо за урок!", "likes": 3},
+    {"user": "John", "text": "Very clear explanation", "likes": 12},
+    {"user": "Мария", "text": "Супер!", "likes": 8},
+    {"user": "Игорь", "text": "Было трудно, но понял", "likes": 5},
+    {"user": "Alex", "text": "Good examples", "likes": 11},
+    {"user": "Ольга", "text": "Лучший курс!", "likes": 15},
+    {"user": "Dmitry", "text": "Немного затянуто", "likes": 2},
+    {"user": "Kate", "text": "Great pace and content", "likes": 9},
+    {"user": "Евгений", "text": "Добавьте больше задач", "likes": 4},
+    {"user": "Sophia", "text": "Perfect for beginners", "likes": 6},
+    {"user": "Николай", "text": "Огонь!", "likes": 13},
+    {"user": "Julia", "text": "Loved it!", "likes": 7},
+    {"user": "Artem", "text": "Понятно, чётко, сжато", "likes": 10}
+]
+
+export_comments(comments, "comments_not_sorted.json", reverse=None)
+
+with open('comments_not_sorted.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+[
+  {
+    "user": "Анна",
+    "text": "Спасибо за урок!",
+    "likes": 3
+  },
+  {
+    "user": "John",
+    "text": "Very clear explanation",
+    "likes": 12
+  },
+  {
+    "user": "Мария",
+    "text": "Супер!",
+    "likes": 8
+  },
+  {
+    "user": "Игорь",
+    "text": "Было трудно, но понял",
+    "likes": 5
+  },
+  {
+    "user": "Alex",
+    "text": "Good examples",
+    "likes": 11
+  },
+  {
+    "user": "Ольга",
+    "text": "Лучший курс!",
+    "likes": 15
+  },
+  {
+    "user": "Dmitry",
+    "text": "Немного затянуто",
+    "likes": 2
+  },
+  {
+    "user": "Kate",
+    "text": "Great pace and content",
+    "likes": 9
+  },
+  {
+    "user": "Евгений",
+    "text": "Добавьте больше задач",
+    "likes": 4
+  },
+  {
+    "user": "Sophia",
+    "text": "Perfect for beginners",
+    "likes": 6
+  },
+  {
+    "user": "Николай",
+    "text": "Огонь!",
+    "likes": 13
+  },
+  {
+    "user": "Julia",
+    "text": "Loved it!",
+    "likes": 7
+  },
+  {
+    "user": "Artem",
+    "text": "Понятно, чётко, сжато",
+    "likes": 10
+  }
+]
+------------------------------
+
+Тест 5:
+Входные данные:
+comments = [
+    {"user": "Анна", "text": "Спасибо за урок!", "likes": 3},
+    {"user": "John", "text": "Very clear explanation", "likes": 8},
+    {"user": "Мария", "text": "Супер!", "likes": 8},
+    {"user": "Игорь", "text": "Было трудно, но понял", "likes": 5},
+    {"user": "Alex", "text": "Good examples", "likes": 11},
+    {"user": "Ольга", "text": "Лучший курс!", "likes": 8},
+    {"user": "Dmitry", "text": "Немного затянуто", "likes": 2},
+    {"user": "Kate", "text": "Great pace and content", "likes": 8},
+    {"user": "Евгений", "text": "Добавьте больше задач", "likes": 8},
+    {"user": "Sophia", "text": "Perfect for beginners", "likes": 6},
+    {"user": "Николай", "text": "Огонь!", "likes": 13},
+    {"user": "Julia", "text": "Loved it!", "likes": 7},
+    {"user": "Artem", "text": "Понятно, чётко, сжато", "likes": 10}
+]
+
+export_comments(comments, "comments_equal.json", reverse=True)
+
+with open('comments_equal.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+[
+  {
+    "user": "Николай",
+    "text": "Огонь!",
+    "likes": 13
+  },
+  {
+    "user": "Alex",
+    "text": "Good examples",
+    "likes": 11
+  },
+  {
+    "user": "Artem",
+    "text": "Понятно, чётко, сжато",
+    "likes": 10
+  },
+  {
+    "user": "John",
+    "text": "Very clear explanation",
+    "likes": 8
+  },
+  {
+    "user": "Мария",
+    "text": "Супер!",
+    "likes": 8
+  },
+  {
+    "user": "Ольга",
+    "text": "Лучший курс!",
+    "likes": 8
+  },
+  {
+    "user": "Kate",
+    "text": "Great pace and content",
+    "likes": 8
+  },
+  {
+    "user": "Евгений",
+    "text": "Добавьте больше задач",
+    "likes": 8
+  },
+  {
+    "user": "Julia",
+    "text": "Loved it!",
+    "likes": 7
+  },
+  {
+    "user": "Sophia",
+    "text": "Perfect for beginners",
+    "likes": 6
+  },
+  {
+    "user": "Игорь",
+    "text": "Было трудно, но понял",
+    "likes": 5
+  },
+  {
+    "user": "Анна",
+    "text": "Спасибо за урок!",
+    "likes": 3
+  },
+  {
+    "user": "Dmitry",
+    "text": "Немного затянуто",
+    "likes": 2
+  }
+]
+------------------------------
+
+Тест 6:
+Входные данные:
+comments = [
+    {"user": "Анна", "text": "Спасибо за урок!", "likes": 3},
+    {"user": "John", "text": "Very clear explanation", "likes": 8},
+    {"user": "Мария", "text": "Супер!", "likes": 8},
+    {"user": "Игорь", "text": "Было трудно, но понял", "likes": 5},
+    {"user": "Alex", "text": "Good examples", "likes": 11},
+    {"user": "Ольга", "text": "Лучший курс!", "likes": 8},
+    {"user": "Dmitry", "text": "Немного затянуто", "likes": 2},
+    {"user": "Kate", "text": "Great pace and content", "likes": 8},
+    {"user": "Евгений", "text": "Добавьте больше задач", "likes": 8},
+    {"user": "Sophia", "text": "Perfect for beginners", "likes": 6},
+    {"user": "Николай", "text": "Огонь!", "likes": 13},
+    {"user": "Julia", "text": "Loved it!", "likes": 7},
+    {"user": "Artem", "text": "Понятно, чётко, сжато", "likes": 10}
+]
+
+export_comments(comments, "comments_equal.json", reverse=False)
+
+with open('comments_equal.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+[
+  {
+    "user": "Dmitry",
+    "text": "Немного затянуто",
+    "likes": 2
+  },
+  {
+    "user": "Анна",
+    "text": "Спасибо за урок!",
+    "likes": 3
+  },
+  {
+    "user": "Игорь",
+    "text": "Было трудно, но понял",
+    "likes": 5
+  },
+  {
+    "user": "Sophia",
+    "text": "Perfect for beginners",
+    "likes": 6
+  },
+  {
+    "user": "Julia",
+    "text": "Loved it!",
+    "likes": 7
+  },
+  {
+    "user": "John",
+    "text": "Very clear explanation",
+    "likes": 8
+  },
+  {
+    "user": "Мария",
+    "text": "Супер!",
+    "likes": 8
+  },
+  {
+    "user": "Ольга",
+    "text": "Лучший курс!",
+    "likes": 8
+  },
+  {
+    "user": "Kate",
+    "text": "Great pace and content",
+    "likes": 8
+  },
+  {
+    "user": "Евгений",
+    "text": "Добавьте больше задач",
+    "likes": 8
+  },
+  {
+    "user": "Artem",
+    "text": "Понятно, чётко, сжато",
+    "likes": 10
+  },
+  {
+    "user": "Alex",
+    "text": "Good examples",
+    "likes": 11
+  },
+  {
+    "user": "Николай",
+    "text": "Огонь!",
+    "likes": 13
+  }
+]
+------------------------------
+
