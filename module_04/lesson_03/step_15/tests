@@ -1,0 +1,193 @@
+Тест 1:
+Входные данные:
+comments = [
+    {"user": "Артем", "text": "Python — сила!", "likes": 15, "category": "Python"},
+    {"user": "Мария", "text": "Обожаю JavaScript", "likes": 10, "category": "JavaScript"},
+    {"user": "John", "text": "JS проще, чем C++", "likes": 7, "category": "JavaScript"},
+    {"user": "Alex", "text": "C++ сложный, но мощный", "likes": 12, "category": "C++"}
+]
+
+export_comments_by_category(comments)
+print('Python'.center(12, '-'))
+with open('python_comments.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+    
+print('JavaScript'.center(12, '-'))
+with open('javascript_comments.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+    
+print('C++'.center(12, '-'))
+with open('c++_comments.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+---Python---
+[
+  {
+    "user": "Артем",
+    "text": "Python — сила!",
+    "likes": 15
+  }
+]
+-JavaScript-
+[
+  {
+    "user": "Мария",
+    "text": "Обожаю JavaScript",
+    "likes": 10
+  },
+  {
+    "user": "John",
+    "text": "JS проще, чем C++",
+    "likes": 7
+  }
+]
+----C++-----
+[
+  {
+    "user": "Alex",
+    "text": "C++ сложный, но мощный",
+    "likes": 12
+  }
+]
+
+------------------------------
+
+Тест 2:
+Входные данные:
+comments = [
+    {"user": "Анна", "text": "Python лучший!", "likes": 12, "category": "Python"},
+    {"user": "Игорь", "text": "Обожаю Python ❤️", "likes": 15, "category": "Python"},
+    {"user": "Kate", "text": "Python прост и ясен", "likes": 12, "category": "Python"},
+    {"user": "John", "text": "Python — король!", "likes": 15, "category": "Python"},
+    {"user": "Liza", "text": "Мне нравится Python", "likes": 8, "category": "Python"},
+
+    {"user": "Alex", "text": "JS прост", "likes": 7, "category": "JavaScript"},
+    {"user": "Мария", "text": "JS классный!", "likes": 12, "category": "JavaScript"},
+    {"user": "Nick", "text": "JS forever!", "likes": 12, "category": "JavaScript"},
+
+    {"user": "Nina", "text": "Go — мощный", "likes": 10, "category": "Go"},
+    {"user": "Paul", "text": "Go рулит!", "likes": 13, "category": "Go"},
+
+    {"user": "Dmitry", "text": "C++ это боль", "likes": 5, "category": "Go"},
+    {"user": "Olga", "text": "Python forever", "likes": 9, "category": "Python"},
+    {"user": "Artem", "text": "Rust сложный, но мощный", "likes": 9, "category": "Rust"},
+
+    {"user": "Alice", "text": "Rust ❤️", "likes": 7, "category": "Rust"},
+    {"user": "Михаил", "text": "Rust топ!", "likes": 9, "category": "Rust"},
+    {"user": "Yuki", "text": "Rust быстрый", "likes": 9, "category": "Rust"}
+]
+
+export_comments_by_category(comments)
+
+print('Python'.center(12, '-'))
+with open('python_comments.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+print('JavaScript'.center(12, '-'))
+with open('javascript_comments.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+print('Go'.center(12, '-'))
+with open('go_comments.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+print('Rust'.center(12, '-'))
+with open('rust_comments.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+---Python---
+[
+  {
+    "user": "Игорь",
+    "text": "Обожаю Python ❤️",
+    "likes": 15
+  },
+  {
+    "user": "John",
+    "text": "Python — король!",
+    "likes": 15
+  },
+  {
+    "user": "Анна",
+    "text": "Python лучший!",
+    "likes": 12
+  },
+  {
+    "user": "Kate",
+    "text": "Python прост и ясен",
+    "likes": 12
+  },
+  {
+    "user": "Olga",
+    "text": "Python forever",
+    "likes": 9
+  },
+  {
+    "user": "Liza",
+    "text": "Мне нравится Python",
+    "likes": 8
+  }
+]
+-JavaScript-
+[
+  {
+    "user": "Мария",
+    "text": "JS классный!",
+    "likes": 12
+  },
+  {
+    "user": "Nick",
+    "text": "JS forever!",
+    "likes": 12
+  },
+  {
+    "user": "Alex",
+    "text": "JS прост",
+    "likes": 7
+  }
+]
+-----Go-----
+[
+  {
+    "user": "Paul",
+    "text": "Go рулит!",
+    "likes": 13
+  },
+  {
+    "user": "Nina",
+    "text": "Go — мощный",
+    "likes": 10
+  },
+  {
+    "user": "Dmitry",
+    "text": "C++ это боль",
+    "likes": 5
+  }
+]
+----Rust----
+[
+  {
+    "user": "Artem",
+    "text": "Rust сложный, но мощный",
+    "likes": 9
+  },
+  {
+    "user": "Михаил",
+    "text": "Rust топ!",
+    "likes": 9
+  },
+  {
+    "user": "Yuki",
+    "text": "Rust быстрый",
+    "likes": 9
+  },
+  {
+    "user": "Alice",
+    "text": "Rust ❤️",
+    "likes": 7
+  }
+]
+------------------------------
+

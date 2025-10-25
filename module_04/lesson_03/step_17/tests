@@ -1,0 +1,150 @@
+Тест 1:
+Входные данные:
+export_stats("python_comments.json", "javascript_comments.json")
+
+with open('stats.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+{
+  "total_comments": 5,
+  "total_likes": 52,
+  "total_users": 3,
+  "total_categories": 2,
+  "users": [
+    {
+      "user": "artem",
+      "comments": 2,
+      "likes": 23
+    },
+    {
+      "user": "maria",
+      "comments": 2,
+      "likes": 22
+    },
+    {
+      "user": "john",
+      "comments": 1,
+      "likes": 7
+    }
+  ]
+}
+
+------------------------------
+
+Тест 2:
+Входные данные:
+export_stats("python.json", "javascript.json", "go.json", "rust.json")
+
+with open('stats.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+{
+  "total_comments": 14,
+  "total_likes": 182,
+  "total_users": 8,
+  "total_categories": 4,
+  "users": [
+    {
+      "user": "artem",
+      "comments": 3,
+      "likes": 42
+    },
+    {
+      "user": "maria",
+      "comments": 3,
+      "likes": 37
+    },
+    {
+      "user": "john",
+      "comments": 2,
+      "likes": 23
+    },
+    {
+      "user": "alex",
+      "comments": 2,
+      "likes": 19
+    },
+    {
+      "user": "nick",
+      "comments": 1,
+      "likes": 17
+    },
+    {
+      "user": "kate",
+      "comments": 1,
+      "likes": 16
+    },
+    {
+      "user": "ivan",
+      "comments": 1,
+      "likes": 15
+    },
+    {
+      "user": "dmitry",
+      "comments": 1,
+      "likes": 13
+    }
+  ]
+}
+------------------------------
+
+Тест 3:
+Входные данные:
+export_stats('py.json', 'js.json', 'rs.json')
+
+with open('stats.json', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+{
+  "total_comments": 24,
+  "total_likes": 258,
+  "total_users": 8,
+  "total_categories": 3,
+  "users": [
+    {
+      "user": "artem",
+      "comments": 4,
+      "likes": 52
+    },
+    {
+      "user": "kate",
+      "comments": 3,
+      "likes": 41
+    },
+    {
+      "user": "john",
+      "comments": 3,
+      "likes": 34
+    },
+    {
+      "user": "alex",
+      "comments": 3,
+      "likes": 31
+    },
+    {
+      "user": "maria",
+      "comments": 3,
+      "likes": 27
+    },
+    {
+      "user": "dmitry",
+      "comments": 2,
+      "likes": 26
+    },
+    {
+      "user": "ivan",
+      "comments": 3,
+      "likes": 25
+    },
+    {
+      "user": "nick",
+      "comments": 3,
+      "likes": 22
+    }
+  ]
+}
+------------------------------
+
