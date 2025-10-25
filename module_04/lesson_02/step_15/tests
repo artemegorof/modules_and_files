@@ -1,0 +1,53 @@
+Тест 1:
+Входные данные:
+decode_text("hello.txt", "alphabet.json")
+
+with open('decoded.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+Hello World!
+
+------------------------------
+
+Тест 2:
+Входные данные:
+decode_text("secret.txt", "alpha.json")
+
+with open('decoded.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+This is my secret message!
+------------------------------
+
+Тест 3:
+Входные данные:
+decode_text("abracadabra.txt", "alpha_13.json")
+
+with open('decoded.txt', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+The Zen of Python, by Tim Peters
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+------------------------------
+
