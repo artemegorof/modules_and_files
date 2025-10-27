@@ -1,0 +1,117 @@
+Тест 1:
+Входные данные:
+print_columns("library_books.csv", ["Автор", "Рейтинг"])
+
+Ожидаемый вывод:
+Джордж Оруэлл;4.8
+Михаил Булгаков;4.9
+Эрих Мария Ремарк;4.7
+Фёдор Достоевский;4.6
+------------------------------
+
+Тест 2:
+Входные данные:
+print_columns("library_books.csv", ["Автор", "Цена"])
+
+Ожидаемый вывод:
+Джордж Оруэлл;N/A
+Михаил Булгаков;N/A
+Эрих Мария Ремарк;N/A
+Фёдор Достоевский;N/A
+------------------------------
+
+Тест 3:
+Входные данные:
+print_columns("library_books.csv", ["Цена", "Издатель"])
+
+
+Ожидаемый вывод:
+Указанные колонки не найдены.
+------------------------------
+
+Тест 4:
+Входные данные:
+print_columns("foreign_books.csv", ["Жанр", "Рейтинг", "Страниц"])
+
+
+Ожидаемый вывод:
+Comedy;4.9;224
+Drama;4.8;281
+Magic realism;4.7;417
+------------------------------
+
+Тест 5:
+Входные данные:
+print_columns('foreign_books.csv', ["жанр", "Рейтинг", "страниц"])
+
+Ожидаемый вывод:
+N/A;4.9;N/A
+N/A;4.8;N/A
+N/A;4.7;N/A
+------------------------------
+
+Тест 6:
+Входные данные:
+print_columns('foreign_books.csv', ["жанр", "Учет", "Год выпуска"])
+
+Ожидаемый вывод:
+Указанные колонки не найдены.
+------------------------------
+
+Тест 7:
+Входные данные:
+print_columns('world_library.csv', ['Рейтинг', 'ID', 'Автор', 'Жанр', 'Страниц', 'Рейтинг'])
+
+Ожидаемый вывод:
+4.5;1;Ernest Hemingway;Classic;128;4.5
+4.6;2;Джером К. Джером;Приключения;230;4.6
+4.8;3;Victor Hugo;Drama;1232;4.8
+4.7;4;Gabriel García Márquez;Magic realism;417;4.7
+4.9;5;Fyodor Dostoevsky;Classic;671;4.9
+4.9;6;Дж. К. Роулинг;Фэнтези;320;4.9
+4.9;7;Douglas Adams;Comedy;224;4.9
+4.9;8;Михаил Булгаков;Роман;480;4.9
+4.8;9;Harper Lee;Drama;281;4.8
+4.7;10;Gabriel García Márquez;Magic realism;417;4.7
+4.5;11;Lewis Carroll;Fantasy;192;4.5
+4.8;12;Карлос Руис Сафон;Мистика;480;4.8
+4.7;13;Ray Bradbury;Science Fiction;256;4.7
+4.3;14;J.D. Salinger;Classic;277;4.3
+4.4;15;Aldous Huxley;Science Fiction;311;4.4
+------------------------------
+
+Тест 8:
+Входные данные:
+print_columns('library_books.csv', ["автор", "Рейтинг"])
+
+Ожидаемый вывод:
+N/A;4.8
+N/A;4.9
+N/A;4.7
+N/A;4.6
+------------------------------
+
+Тест 9:
+Входные данные:
+print_columns('complex_titles.csv', ['ID', 'Название', 'Автор'])
+
+
+Ожидаемый вывод:
+1;Eat, Pray, Love;Elizabeth Gilbert
+2;Romeo and Juliet;William Shakespeare
+3;The Girl with the Dragon Tattoo;Stieg Larsson
+4;Charlie and the Chocolate Factory;Roald Dahl
+------------------------------
+
+Тест 10:
+Входные данные:
+print_columns('complex_titles.csv', ['Текст', 'Цена', 'Название'])
+
+
+Ожидаемый вывод:
+N/A;N/A;Eat, Pray, Love
+N/A;N/A;Romeo and Juliet
+N/A;N/A;The Girl with the Dragon Tattoo
+N/A;N/A;Charlie and the Chocolate Factory
+------------------------------
+
