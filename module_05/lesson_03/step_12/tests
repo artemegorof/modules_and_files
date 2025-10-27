@@ -1,0 +1,49 @@
+Тест 1:
+Входные данные:
+merge_student_courses("students.csv", "enrollments.csv")
+
+with open('student_courses.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+name:courses
+Аня:Git, Python
+Борис:SQL
+Света:Django, Python, SQL
+Тимур:Пока нет направлений обучения
+Марина:Linux, Networks
+
+------------------------------
+
+Тест 2:
+Входные данные:
+merge_student_courses("students2.csv", "enrollments2.csv")
+
+with open('student_courses.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+name:courses
+Илья:CSS, HTML
+Настя:Пока нет направлений обучения
+Павел:Пока нет направлений обучения
+------------------------------
+
+Тест 3:
+Входные данные:
+merge_student_courses("students3.csv", "enrollments3.csv")
+
+with open('student_courses.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+name:courses
+Артем:Git, Python
+Полина:Excel, SQL
+Максим:Java, Python
+Катя:CSS, HTML, JavaScript
+Денис:Пока нет направлений обучения
+Оля:Пока нет направлений обучения
+Игорь:Python
+------------------------------
+

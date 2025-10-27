@@ -1,0 +1,141 @@
+Тест 1:
+Входные данные:
+export_students_to_json("students.csv", "enrollments.csv")
+
+with open('student_courses.json', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+[
+  {
+    "id": 1,
+    "name": "Аня",
+    "courses": [
+      "Git",
+      "Python"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Борис",
+    "courses": [
+      "SQL"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Света",
+    "courses": [
+      "Django",
+      "Python",
+      "SQL"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Тимур",
+    "courses": []
+  },
+  {
+    "id": 5,
+    "name": "Марина",
+    "courses": [
+      "Linux",
+      "Networks"
+    ]
+  }
+]
+------------------------------
+
+Тест 2:
+Входные данные:
+export_students_to_json("students2.csv", "enrollments2.csv")
+
+with open('student_courses.json', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+[
+  {
+    "id": 1,
+    "name": "Илья",
+    "courses": [
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Настя",
+    "courses": []
+  },
+  {
+    "id": 3,
+    "name": "Павел",
+    "courses": []
+  }
+]
+------------------------------
+
+Тест 3:
+Входные данные:
+export_students_to_json("students3.csv", "enrollments3.csv")
+
+with open('student_courses.json', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+[
+  {
+    "id": 1,
+    "name": "Артем",
+    "courses": [
+      "Git",
+      "Python"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Полина",
+    "courses": [
+      "Excel",
+      "SQL"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Максим",
+    "courses": [
+      "Java",
+      "Python"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Катя",
+    "courses": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Денис",
+    "courses": []
+  },
+  {
+    "id": 6,
+    "name": "Оля",
+    "courses": []
+  },
+  {
+    "id": 7,
+    "name": "Игорь",
+    "courses": [
+      "Python"
+    ]
+  }
+]
+------------------------------
+
