@@ -1,0 +1,61 @@
+Тест 1:
+Входные данные:
+export_genre_summary('movies1.csv')
+
+with open('genre_summary.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+genre,total_movies,average_rating,average_duration
+Драма,2,8.9,127.0
+Фантастика,2,8.9,158.5
+Боевик,2,8.8,153.5
+
+------------------------------
+
+Тест 2:
+Входные данные:
+export_genre_summary('movies2.csv')
+
+with open('genre_summary.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+genre,total_movies,average_rating,average_duration
+Драма,2,8.8,158.5
+Фантастика,2,8.8,149.0
+Боевик,1,8.0,107.0
+------------------------------
+
+Тест 3:
+Входные данные:
+export_genre_summary('movies3.csv')
+
+with open('genre_summary.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+genre,total_movies,average_rating,average_duration
+Фэнтези,3,8.7,174.0
+Приключения,2,7.8,119.5
+Боевик,1,7.5,120.0
+------------------------------
+
+Тест 4:
+Входные данные:
+export_genre_summary('movies4.csv')
+
+with open('genre_summary.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+genre,total_movies,average_rating,average_duration
+Драма,3,9.0,147.7
+Фэнтези,3,8.7,174.0
+Романтика,2,8.6,161.5
+Фантастика,7,8.4,137.7
+Боевик,4,8.3,128.8
+Триллер,2,8.1,126.5
+Ужасы,3,7.8,118.3
+------------------------------
+

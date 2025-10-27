@@ -1,0 +1,56 @@
+Тест 1:
+Входные данные:
+export_category_summary('purchases.json')
+
+with open('category_summary.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+category,total_sales,unique_customers
+Еда,430,2
+Косметика,400,1
+------------------------------
+
+Тест 2:
+Входные данные:
+export_category_summary('purchases2.json')
+
+with open('category_summary.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+category,total_sales,unique_customers
+Еда,350,2
+Косметика,300,2
+Электроника,35000,2
+------------------------------
+
+Тест 3:
+Входные данные:
+export_category_summary('purchases3.json')
+
+with open('category_summary.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+category,total_sales,unique_customers
+Еда,560,2
+Косметика,650,2
+Электроника,48000,2
+------------------------------
+
+Тест 4:
+Входные данные:
+export_category_summary('purchases4.json')
+
+with open('category_summary.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+category,total_sales,unique_customers
+Еда,1420,6
+Канцтовары,1100,3
+Косметика,1200,3
+Электроника,81000,3
+------------------------------
+
