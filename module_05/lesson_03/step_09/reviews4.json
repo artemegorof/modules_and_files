@@ -1,11 +1,6 @@
 [
-  {"user": "anna", "rating": 5},
-  {"user": "anna", "rating": 4},
-  {"user": "anna", "rating": 5},
-  {"user": "bob", "rating": 2},
-  {"user": "bob", "rating": 3},
-  {"user": "bob", "rating": 4},
-  {"user": "chris", "rating": 5},
-  {"user": "chris", "rating": 5},
-  {"user": "chris", "rating": 5}
+  {"user": "Alice", "rating": 5, "comment": "Uppercase!"},
+  {"user": "alice", "rating": 3, "comment": "Lowercase!"},
+  {"user": "Bob", "rating": 4, "comment": "Hi"},
+  {"user": "bob", "rating": 2, "comment": "Oops"}
 ]

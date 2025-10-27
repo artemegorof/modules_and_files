@@ -34,8 +34,7 @@ with open('user_stats.csv', encoding='utf-8') as f:
 
 Ожидаемый вывод:
 user,total_reviews,average_rating
-kate,2,4.5
-mike,1,4.0
+dan,3,4.0
 ------------------------------
 
 Тест 4:
@@ -47,9 +46,10 @@ with open('user_stats.csv', encoding='utf-8') as f:
 
 Ожидаемый вывод:
 user,total_reviews,average_rating
-anna,3,4.7
-bob,3,3.0
-chris,3,5.0
+Alice,1,5.0
+Bob,1,4.0
+alice,1,3.0
+bob,1,2.0
 ------------------------------
 
 Тест 5:
@@ -61,14 +61,33 @@ with open('user_stats.csv', encoding='utf-8') as f:
 
 Ожидаемый вывод:
 user,total_reviews,average_rating
-anna,3,4.7
-bob,3,3.0
-clara,4,4.8
-dima,3,2.0
-eva,5,4.8
-fred,3,2.0
-george,4,4.8
-harry,4,3.0
-kate,4,4.5
+alex,2,4.5
+ivan,2,2.0
+kate,3,4.7
+maria,3,3.0
+olga,1,3.0
+pavel,3,4.7
+------------------------------
+
+Тест 6:
+Входные данные:
+export_user_stats('reviews6.json')
+
+with open('user_stats.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+user,total_reviews,average_rating
+alex,3,4.0
+bob,3,3.7
+charlie,3,4.7
+diana,2,3.0
+elena,3,1.7
+frank,2,5.0
+george,2,3.5
+harry,3,4.7
+irina,2,3.5
+kate,2,5.0
+
 ------------------------------
 

@@ -1,7 +1,5 @@
 [
-  {"user": "kate", "rating": 5, "comment": "Excellent"},
-  {"user": "kate", "comment": "No rating"},
-  {"user": "mike", "rating": 4, "comment": "Good"},
-  {"user": "mike", "rating": "oops", "comment": "Invalid"},
-  {"user": "kate", "rating": 4, "comment": "Nice"}
+  {"user": "dan", "rating": 4, "comment": "Nice"},
+  {"user": "dan", "rating": 4, "comment": "Again good"},
+  {"user": "dan", "rating": 4, "comment": "Consistent"}
 ]
