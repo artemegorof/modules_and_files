@@ -41,6 +41,6 @@ print(count_lines_in_file('dark_knight.txt'))
 
 
 Ожидаемый вывод:
-10
+11
 ------------------------------
 
