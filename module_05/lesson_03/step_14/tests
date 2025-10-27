@@ -1,0 +1,57 @@
+Тест 1:
+Входные данные:
+export_summary(['it.json', 'hr.json', 'sales.json'], "summary.csv")
+
+with open('summary.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+department,employees,average_salary,min_salary,max_salary
+hr,2,92500.0,90000.0,95000.0
+it,3,123333.33,100000.0,150000.0
+sales,3,131666.67,105000.0,180000.0
+
+------------------------------
+
+Тест 2:
+Входные данные:
+export_summary(['finance.json', 'support.json'], "departments_stat.csv")
+
+with open('departments_stat.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+department,employees,average_salary,min_salary,max_salary
+finance,2,100000.0,80000.0,120000.0
+support,3,71666.67,60000.0,90000.0
+------------------------------
+
+Тест 3:
+Входные данные:
+export_summary(['design.json', 'it2.json', 'hr2.json', 'sales2.json'], "departments_summary.csv")
+
+with open('departments_summary.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+department,employees,average_salary,min_salary,max_salary
+design,2,102500.0,95000.0,110000.0
+hr2,1,80000.0,80000.0,80000.0
+it2,2,122500.0,105000.0,140000.0
+------------------------------
+
+Тест 4:
+Входные данные:
+export_summary(['it3.json', 'sales3.json', 'hr3.json', 'finance2.json'], "sum.csv")
+
+with open('sum.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+department,employees,average_salary,min_salary,max_salary
+finance2,4,128750.0,75000.0,180000.0
+hr3,3,90000.0,85000.0,95000.0
+it3,5,135000.0,95000.0,180000.0
+sales3,4,138750.0,110000.0,200000.0
+------------------------------
+

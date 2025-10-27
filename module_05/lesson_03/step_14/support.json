@@ -1,0 +1,5 @@
+[
+  {"name": "Света", "position": "Оператор", "salary": 60000},
+  {"name": "Дима", "position": "Саппорт", "salary": 65000},
+  {"name": "Лена", "position": "Тимлид", "salary": 90000}
+]
