@@ -1,0 +1,54 @@
+Тест 1:
+Входные данные:
+print_book_titles('library_books.csv')
+
+Ожидаемый вывод:
+1984
+Мастер и Маргарита
+Три товарища
+Преступление и наказание
+------------------------------
+
+Тест 2:
+Входные данные:
+print_book_titles('foreign_books.csv')
+
+Ожидаемый вывод:
+The Hitchhiker's Guide to the Galaxy
+To Kill a Mockingbird
+One Hundred Years of Solitude
+------------------------------
+
+Тест 3:
+Входные данные:
+print_book_titles('complex_titles.csv')
+
+Ожидаемый вывод:
+Eat, Pray, Love
+Romeo and Juliet
+The Girl with the Dragon Tattoo
+Charlie and the Chocolate Factory
+------------------------------
+
+Тест 4:
+Входные данные:
+print_book_titles('world_library.csv')
+
+Ожидаемый вывод:
+The Old Man and the Sea
+Трое в лодке, не считая собаки
+Les Misérables
+Cien años de soledad
+Crime and Punishment
+Гарри Поттер и философский камень
+The Hitchhiker's Guide to the Galaxy
+Мастер и Маргарита
+To Kill a Mockingbird
+One Hundred Years of Solitude
+Alice's Adventures in Wonderland
+Тень ветра, или Лабиринт забытых книг
+Fahrenheit 451
+The Catcher in the Rye
+Brave New World
+------------------------------
+
