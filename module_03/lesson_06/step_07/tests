@@ -1,0 +1,45 @@
+Тест 1:
+Входные данные:
+print(longest_word_in_file('english_text.txt'))
+
+
+Ожидаемый вывод:
+branches
+------------------------------
+
+Тест 2:
+Входные данные:
+print(longest_word_in_file('russian_text.txt'))
+
+
+Ожидаемый вывод:
+Непредсказуемость
+------------------------------
+
+Тест 3:
+Входные данные:
+print(longest_word_in_file('same_length_words.txt'))
+
+
+Ожидаемый вывод:
+TypeScript
+------------------------------
+
+Тест 4:
+Входные данные:
+print(longest_word_in_file('punctuation_and_dashes.txt'))
+
+
+Ожидаемый вывод:
+testing
+------------------------------
+
+Тест 5:
+Входные данные:
+print(longest_word_in_file('edge_case_spaces.txt'))
+
+
+Ожидаемый вывод:
+crystalclear
+------------------------------
+
