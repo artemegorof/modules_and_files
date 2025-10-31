@@ -40,10 +40,10 @@ I'm the king of the world!
 
 Тест 6:
 Входные данные:
-print(most_talkative_line('finding_nemo.txt'))
+print(most_talkative_line('mixed.txt'))
 
 Ожидаемый вывод:
-Just keep swimming
+to be or not to be
 ------------------------------
 
 Тест 7:
@@ -60,5 +60,13 @@ print(most_talkative_line('alphabet_test.txt'))
 
 Ожидаемый вывод:
 The quick brown fox jumps over the lazy dog.
+------------------------------
+
+Тест 9:
+Входные данные:
+print(most_talkative_line('mixed_2.txt'))
+
+Ожидаемый вывод:
+I'm the king of the world!
 ------------------------------
 
