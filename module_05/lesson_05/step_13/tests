@@ -1,0 +1,121 @@
+Тест 1:
+Входные данные:
+catalog = [
+    {"product": "Чай", "category": "Напитки", "price": 100},
+    {"product": "Кофе", "category": "Напитки", "price": 200},
+    {"product": "Печенье", "category": "Сладости", "price": 150}
+]
+
+export_columns(catalog, "selected.csv", ["product", "price"])
+
+with open('selected.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+product,price
+Чай,100
+Кофе,200
+Печенье,150
+------------------------------
+
+Тест 2:
+Входные данные:
+catalog = [
+    {"product": "Чай", "category": "Напитки", "price": 100},
+    {"product": "Кофе", "category": "Напитки", "price": 200},
+    {"product": "Сок", "category": "Напитки", "price": 150},
+    {"product": "Печенье", "category": "Сладости", "price": 90},
+    {"product": "Шоколад", "category": "Сладости", "price": 250},
+    {"product": "Сахар", "category": "Продукты", "price": 55},
+    {"product": "Соль", "category": "Продукты", "price": 30},
+]
+
+export_columns(catalog, "selected_product.csv", ["name", "weight", "price", 'category'])
+
+try:
+    with open('selected_product.csv', 'r', encoding='utf-8') as f:
+        print(f.read())
+except FileNotFoundError:
+    print('Файл quantity.csv не обнаружен')
+
+Ожидаемый вывод:
+name,weight,price,category
+N/A,N/A,100,Напитки
+N/A,N/A,200,Напитки
+N/A,N/A,150,Напитки
+N/A,N/A,90,Сладости
+N/A,N/A,250,Сладости
+N/A,N/A,55,Продукты
+N/A,N/A,30,Продукты
+------------------------------
+
+Тест 3:
+Входные данные:
+products = [
+    {"product": "Чай", "category": "Напитки", "price": 100, "country": "Индия"},
+    {"product": "Кофе", "category": "Напитки", "price": 250, "country": "Бразилия"},
+    {"product": "Матча", "category": "Напитки", "price": 450, "country": "Япония"},
+    {"product": "Печенье", "category": "Сладости", "price": 120, "country": "Россия"},
+]
+
+export_columns(products, "products.csv", ["name", "weight", "age", 'category'])
+
+with open('products.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+name,weight,age,category
+N/A,N/A,N/A,Напитки
+N/A,N/A,N/A,Напитки
+N/A,N/A,N/A,Напитки
+N/A,N/A,N/A,Сладости
+------------------------------
+
+Тест 4:
+Входные данные:
+products = [
+    {"product": "Чай", "category": "Напитки", "price": 100, "country": "Индия", "in_stock": True},
+    {"product": "Кофе", "category": "Напитки", "price": 250, "country": "Бразилия", "in_stock": False},
+    {"product": "Матча", "category": "Напитки", "price": 450, "country": "Япония", "in_stock": True},
+    {"product": "Печенье", "category": "Сладости", "price": 120, "country": "Россия", "in_stock": True},
+    {"product": "Шоколад", "category": "Сладости", "price": 250, "country": "Швейцария", "in_stock": False}
+]
+
+
+export_columns(products, "category.csv", ["product", "name", "category", 'price', 'city'])
+
+with open('category.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+product,name,category,price,city
+Чай,N/A,Напитки,100,N/A
+Кофе,N/A,Напитки,250,N/A
+Матча,N/A,Напитки,450,N/A
+Печенье,N/A,Сладости,120,N/A
+Шоколад,N/A,Сладости,250,N/A
+------------------------------
+
+Тест 5:
+Входные данные:
+products = [
+    {"product": "Чай", "category": "Напитки", "price": 100, "country": "Индия", "in_stock": True},
+    {"product": "Кофе", "category": "Напитки", "price": 250, "country": "Бразилия", "in_stock": False},
+    {"product": "Матча", "category": "Напитки", "price": 450, "country": "Япония", "in_stock": True},
+    {"product": "Печенье", "category": "Сладости", "price": 120, "country": "Россия", "in_stock": True},
+    {"product": "Шоколад", "category": "Сладости", "price": 250, "country": "Швейцария", "in_stock": False}
+]
+
+
+export_columns(products, "prod_cat.csv", ["prod", "name", "cat", 'cost', 'city'])
+try:
+    with open('prod_cat.csv', 'r', encoding='utf-8') as f:
+        print(f.read())
+except FileNotFoundError:
+    print('Файл prod_cat.csv не обнаружен')
+
+Ожидаемый вывод:
+Ни одна из указанных колонок не найдена.
+Файл prod_cat.csv не обнаружен
+------------------------------
+

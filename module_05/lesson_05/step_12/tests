@@ -1,0 +1,90 @@
+Тест 1:
+Входные данные:
+catalog = [
+    {"product": "Чай", "category": "Напитки", "price": 100},
+    {"product": "Кофе", "category": "Напитки", "price": 200},
+    {"product": "Печенье", "category": "Сладости", "price": 150}
+]
+
+export_column(catalog, 'price.csv', "price")
+
+with open('price.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+price
+100
+200
+150
+------------------------------
+
+Тест 2:
+Входные данные:
+catalog = [
+    {"product": "Чай", "category": "Напитки", "price": 100},
+    {"product": "Кофе", "category": "Напитки", "price": 200},
+    {"product": "Сок", "category": "Напитки", "price": 150},
+    {"product": "Печенье", "category": "Сладости", "price": 90},
+    {"product": "Шоколад", "category": "Сладости", "price": 250},
+    {"product": "Сахар", "category": "Продукты", "price": 55},
+    {"product": "Соль", "category": "Продукты", "price": 30},
+]
+
+export_column(catalog, 'quantity.csv', "quantity")
+try:
+    with open('quantity.csv', 'r', encoding='utf-8') as f:
+        print(f.read())
+except FileNotFoundError:
+    print('Файл quantity.csv не обнаружен')
+
+Ожидаемый вывод:
+Колонка quantity отсутствует в данных.
+Файл quantity.csv не обнаружен
+------------------------------
+
+Тест 3:
+Входные данные:
+products = [
+    {"product": "Чай", "category": "Напитки", "price": 100, "country": "Индия"},
+    {"product": "Кофе", "category": "Напитки", "price": 250, "country": "Бразилия"},
+    {"product": "Матча", "category": "Напитки", "price": 450, "country": "Япония"},
+    {"product": "Печенье", "category": "Сладости", "price": 120, "country": "Россия"},
+]
+
+export_column(products, 'countries.csv', "country")
+
+with open('countries.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+country
+Индия
+Бразилия
+Япония
+Россия
+------------------------------
+
+Тест 4:
+Входные данные:
+products = [
+    {"product": "Чай", "category": "Напитки", "price": 100, "country": "Индия", "in_stock": True},
+    {"product": "Кофе", "category": "Напитки", "price": 250, "country": "Бразилия", "in_stock": False},
+    {"product": "Матча", "category": "Напитки", "price": 450, "country": "Япония", "in_stock": True},
+    {"product": "Печенье", "category": "Сладости", "price": 120, "country": "Россия", "in_stock": True},
+    {"product": "Шоколад", "category": "Сладости", "price": 250, "country": "Швейцария", "in_stock": False}
+]
+
+export_column(products, 'category.csv', "category")
+
+with open('category.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+category
+Напитки
+Напитки
+Напитки
+Сладости
+Сладости
+------------------------------
+

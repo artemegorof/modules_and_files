@@ -1,0 +1,94 @@
+Тест 1:
+Входные данные:
+catalog = [
+    {"product": "Чай", "category": "Напитки", "price": 100},
+    {"product": "Кофе", "category": "Напитки", "price": 200},
+    {"product": "Печенье", "category": "Сладости", "price": 150}
+]
+
+save_catalog_to_csv(catalog, 'products.csv')
+
+with open('products.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+product,category,price
+Чай,Напитки,100
+Кофе,Напитки,200
+Печенье,Сладости,150
+------------------------------
+
+Тест 2:
+Входные данные:
+products = [
+    {"product": "Чай", "category": "Напитки", "price": 100},
+    {"product": "Кофе", "category": "Напитки", "price": 200},
+    {"product": "Сок", "category": "Напитки", "price": 150},
+    {"product": "Печенье", "category": "Сладости", "price": 90},
+    {"product": "Шоколад", "category": "Сладости", "price": 250},
+    {"product": "Сахар", "category": "Продукты", "price": 55},
+    {"product": "Соль", "category": "Продукты", "price": 30},
+]
+
+save_catalog_to_csv(products, 'catalogs.csv')
+
+with open('catalogs.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+product,category,price
+Чай,Напитки,100
+Кофе,Напитки,200
+Сок,Напитки,150
+Печенье,Сладости,90
+Шоколад,Сладости,250
+Сахар,Продукты,55
+Соль,Продукты,30
+------------------------------
+
+Тест 3:
+Входные данные:
+products = [
+    {"product": "Чай", "category": "Напитки", "price": 100, "country": "Индия"},
+    {"product": "Кофе", "category": "Напитки", "price": 250, "country": "Бразилия"},
+    {"product": "Матча", "category": "Напитки", "price": 450, "country": "Япония"},
+    {"product": "Печенье", "category": "Сладости", "price": 120, "country": "Россия"},
+]
+
+save_catalog_to_csv(products, 'catalogs_country.csv')
+
+with open('catalogs_country.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+product,category,price,country
+Чай,Напитки,100,Индия
+Кофе,Напитки,250,Бразилия
+Матча,Напитки,450,Япония
+Печенье,Сладости,120,Россия
+------------------------------
+
+Тест 4:
+Входные данные:
+products = [
+    {"product": "Чай", "category": "Напитки", "price": 100, "country": "Индия", "in_stock": True},
+    {"product": "Кофе", "category": "Напитки", "price": 250, "country": "Бразилия", "in_stock": False},
+    {"product": "Матча", "category": "Напитки", "price": 450, "country": "Япония", "in_stock": True},
+    {"product": "Печенье", "category": "Сладости", "price": 120, "country": "Россия", "in_stock": True},
+    {"product": "Шоколад", "category": "Сладости", "price": 250, "country": "Швейцария", "in_stock": False}
+]
+
+save_catalog_to_csv(products, 'catalogs_country.csv')
+
+with open('catalogs_country.csv', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+product,category,price,country,in_stock
+Чай,Напитки,100,Индия,True
+Кофе,Напитки,250,Бразилия,False
+Матча,Напитки,450,Япония,True
+Печенье,Сладости,120,Россия,True
+Шоколад,Сладости,250,Швейцария,False
+------------------------------
+

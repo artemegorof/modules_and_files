@@ -1,0 +1,48 @@
+Тест 1:
+Входные данные:
+export_order_stats('catalog.csv', 'orders.csv')
+
+with open('order_stats.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+product,quantity_sold,total_revenue,revenue_share
+Кофе,1,200,21.1
+Сок,3,450,47.4
+Чай,3,300,31.6
+------------------------------
+
+Тест 2:
+Входные данные:
+export_order_stats('catalog2.csv', 'orders2.csv')
+
+with open('order_stats.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+product,quantity_sold,total_revenue,revenue_share
+Кофе,3,600,34.9
+Лимонад,1,120,7.0
+Молоко,4,200,11.6
+Сок,4,600,34.9
+Чай,2,200,11.6
+------------------------------
+
+Тест 3:
+Входные данные:
+export_order_stats('catalog3.csv', 'orders3.csv')
+
+with open('order_stats.csv', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+product,quantity_sold,total_revenue,revenue_share
+Кефир,2,140,7.4
+Кофе,1,200,10.5
+Молоко,3,180,9.5
+Сок,3,360,18.9
+Хлеб,8,320,16.8
+Чай,4,400,21.1
+Шоколад,2,300,15.8
+------------------------------
+
