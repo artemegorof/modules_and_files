@@ -1,6 +1,6 @@
 Тест 1:
 Входные данные:
-export_category_summary('purchases.json')
+export_category_summary('purchases.csv')
 
 with open('category_summary.csv', encoding='utf-8') as f:
     print(f.read())
@@ -13,7 +13,7 @@ category,total_sales,unique_customers
 
 Тест 2:
 Входные данные:
-export_category_summary('purchases2.json')
+export_category_summary('purchases2.csv')
 
 with open('category_summary.csv', encoding='utf-8') as f:
     print(f.read())
@@ -27,7 +27,7 @@ category,total_sales,unique_customers
 
 Тест 3:
 Входные данные:
-export_category_summary('purchases3.json')
+export_category_summary('purchases3.csv')
 
 with open('category_summary.csv', encoding='utf-8') as f:
     print(f.read())
@@ -41,7 +41,7 @@ category,total_sales,unique_customers
 
 Тест 4:
 Входные данные:
-export_category_summary('purchases4.json')
+export_category_summary('purchases4.csv')
 
 with open('category_summary.csv', encoding='utf-8') as f:
     print(f.read())
