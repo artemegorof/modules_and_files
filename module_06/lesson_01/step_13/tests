@@ -1,0 +1,76 @@
+Тест 1:
+Входные данные:
+user = {
+    "login": "SleepyDragon",
+    "state": {"location": (10, 20), "inventory": ["apple"], "stats": {"hp": 90}}
+}
+
+save_state(user)
+restored = load_state("SleepyDragon")
+print(restored)
+
+Ожидаемый вывод:
+{'location': (10, 20), 'inventory': ['apple'], 'stats': {'hp': 90}}
+
+------------------------------
+
+Тест 2:
+Входные данные:
+print(load_state("ChillPenguin"))
+
+Ожидаемый вывод:
+{}
+------------------------------
+
+Тест 3:
+Входные данные:
+user = {
+    "login": "skrip_kresla",
+    "state": {
+        "location": (5, 10),
+        "inventory": ["apple", "stick"],
+        "stats": {"hp": 95, "mana": 30}
+    }
+}
+
+save_state(user)
+print(load_state("skrip_kresla"))
+
+
+Ожидаемый вывод:
+{'location': (5, 10), 'inventory': ['apple', 'stick'], 'stats': {'hp': 95, 'mana': 30}}
+
+------------------------------
+
+Тест 4:
+Входные данные:
+# Проверка на существование файла
+
+user = {
+    "login": "skrip_kresla",
+    "state": {
+        "location": (5, 10),
+        "inventory": ["apple", "stick"],
+        "stats": {"hp": 95, "mana": 30}
+    }
+}
+
+save_state(user)
+
+hash_value = get_login_hash('skrip_kresla')
+
+with open(f"save_game_{hash_value}.pkl", "rb") as file:
+    print(file.read())
+
+Ожидаемый вывод:
+b'\x80\x04\x95R\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08location\x94K\x05K\n\x86\x94\x8c\tinventory\x94]\x94(\x8c\x05apple\x94\x8c\x05stick\x94e\x8c\x05stats\x94}\x94(\x8c\x02hp\x94K_\x8c\x04mana\x94K\x1euu.'
+------------------------------
+
+Тест 5:
+Входные данные:
+print(load_state("unknown_creature"))
+
+Ожидаемый вывод:
+{}
+------------------------------
+
