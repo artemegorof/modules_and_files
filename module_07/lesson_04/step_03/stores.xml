@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<store>
+    <order id="1001">
+        <customer>
+            <name>Artem</name>
+            <city>Yerevan</city>
+        </customer>
+        <items>
+            <item sku="A1">
+                <title>Keyboard</title>
+                <qty>1</qty>
+            </item>
+            <item sku="B2">
+                <title>Mouse</title>
+                <qty>2</qty>
+            </item>
+        </items>
+        <payment method="card">
+            <total>540</total>
+            <currency>AMD</currency>
+        </payment>
+        <delivery>
+            <address>
+                <street>Abovyan</street>
+                <house>10</house>
+            </address>
+            <slot>
+                <date>2026-02-15</date>
+                <time>18:00</time>
+            </slot>
+        </delivery>
+    </order>
+
+    <order id="1002">
+        <customer>
+            <name>Alice</name>
+            <city>Gyumri</city>
+        </customer>
+        <items>
+            <item sku="C3">
+                <title>USB-C Cable</title>
+                <qty>3</qty>
+            </item>
+        </items>
+        <payment method="cash">
+            <total>270</total>
+            <currency>AMD</currency>
+        </payment>
+        <delivery>
+            <address>
+                <street>Sayat-Nova</street>
+                <house>5</house>
+            </address>
+        </delivery>
+        <notes>
+            <note>Call before arrival</note>
+            <note>Leave at door</note>
+        </notes>
+    </order>
+
+    <order id="1003">
+        <customer>
+            <name>Bob</name>
+            <city>Vanadzor</city>
+        </customer>
+        <items>
+            <item sku="D4">
+                <title>Monitor</title>
+                <qty>1</qty>
+            </item>
+            <item sku="E5">
+                <title>HDMI</title>
+                <qty>2</qty>
+            </item>
+            <item sku="F6">
+                <title>Webcam</title>
+                <qty>1</qty>
+            </item>
+        </items>
+        <payment method="card">
+            <total>1290</total>
+            <currency>AMD</currency>
+        </payment>
+    </order>
+</store>

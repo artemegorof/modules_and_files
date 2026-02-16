@@ -1,0 +1,58 @@
+Тест 1:
+Входные данные:
+print(get_child_tags("shops.xml", "product"))
+
+
+Ожидаемый вывод:
+['name', 'price', 'name', 'price', 'details']
+------------------------------
+
+Тест 2:
+Входные данные:
+print(get_child_tags("universes.xml", "galaxy"))
+
+Ожидаемый вывод:
+['system', 'blackhole', 'system']
+------------------------------
+
+Тест 3:
+Входные данные:
+print(get_child_tags("companies.xml", "department"))
+
+Ожидаемый вывод:
+['employee', 'employee', 'employee']
+------------------------------
+
+Тест 4:
+Входные данные:
+print(get_child_tags("blocks.xml", "block"))
+
+Ожидаемый вывод:
+['a', 'b', 'c']
+------------------------------
+
+Тест 5:
+Входные данные:
+print(get_child_tags("empty.xml", "missing_tag"))
+
+
+Ожидаемый вывод:
+[]
+------------------------------
+
+Тест 6:
+Входные данные:
+print(get_child_tags("stores.xml", "order"))
+
+Ожидаемый вывод:
+ ['customer', 'items', 'payment', 'delivery', 'customer', 'items', 'payment', 'delivery', 'notes', 'customer', 'items', 'payment']
+------------------------------
+
+Тест 7:
+Входные данные:
+print(get_child_tags("festivals.xml", "day"))
+
+Ожидаемый вывод:
+['stage', 'stage', 'stage', 'stage']
+------------------------------
+

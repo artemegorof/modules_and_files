@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<dashboard>
+    <widget id="w1" />
+    <widget id="w2" />
+    <widget id="w3" />
+    <chart type="line" />
+    <chart type="bar" />
+    <table name="sales" />
+    <table name="traffic" />
+    <note>Daily report</note>
+    <note>Generated automatically</note>
+    <summary />
+    <footer />
+</dashboard>

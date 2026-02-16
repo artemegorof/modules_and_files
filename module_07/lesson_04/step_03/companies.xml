@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<company>
+ <department>
+     <employee>
+         <name>Alice</name>
+         <role>Dev</role>
+     </employee>
+     <employee>
+         <name>Bob</name>
+         <role>QA</role>
+         <skills>
+             <skill>Python</skill>
+         </skills>
+     </employee>
+ </department>
+ <department>
+     <employee>
+         <name>Charlie</name>
+     </employee>
+ </department>
+</company>

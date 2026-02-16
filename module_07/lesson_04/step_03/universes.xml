@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<universe>
+ <galaxy name="MilkyWay">
+     <system>
+         <planet>Earth</planet>
+     </system>
+     <blackhole id="BH-1" />
+ </galaxy>
+ <galaxy name="Andromeda">
+     <system>
+         <planet>Kepler-22b</planet>
+     </system>
+ </galaxy>
+ <galaxy name="Triangulum" />
+</universe>

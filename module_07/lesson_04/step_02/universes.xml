@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<universe>
+    <galaxy name="MilkyWay">
+        <system name="Solar">
+            <planet name="Earth">
+                <continent name="Eurasia">
+                    <country name="Armenia">
+                        <city name="Yerevan">
+                            <district name="Kentron">
+                                <street name="Abovyan">
+                                    <house number="10">
+                                        <apartment number="7">
+                                            <resident>Artem</resident>
+                                        </apartment>
+                                    </house>
+                                </street>
+                            </district>
+                        </city>
+                    </country>
+                </continent>
+            </planet>
+        </system>
+    </galaxy>
+    <galaxy name="Andromeda" />
+    <blackhole id="BH-001" />
+</universe>

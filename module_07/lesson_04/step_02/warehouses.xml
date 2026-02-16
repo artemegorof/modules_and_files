@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<warehouse>
+  <shipment id="S1">
+      <box>
+          <item>Keyboard</item>
+      </box>
+  </shipment>
+  <note>Handle with care</note>
+</warehouse>

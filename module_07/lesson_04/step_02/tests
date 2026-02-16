@@ -1,0 +1,58 @@
+Тест 1:
+Входные данные:
+print(get_child_tags("products.xml"))
+
+
+Ожидаемый вывод:
+['product', 'product']
+------------------------------
+
+Тест 2:
+Входные данные:
+print(get_child_tags("libraries.xml"))
+
+Ожидаемый вывод:
+['author', 'author', 'author']
+------------------------------
+
+Тест 3:
+Входные данные:
+print(get_child_tags("warehouses.xml"))
+
+Ожидаемый вывод:
+['shipment', 'note']
+------------------------------
+
+Тест 4:
+Входные данные:
+print(get_child_tags("data.xml"))
+
+Ожидаемый вывод:
+['items']
+------------------------------
+
+Тест 5:
+Входные данные:
+print(get_child_tags("empty.xml"))
+
+
+Ожидаемый вывод:
+[]
+------------------------------
+
+Тест 6:
+Входные данные:
+print(get_child_tags("dashboards.xml"))
+
+Ожидаемый вывод:
+['widget', 'widget', 'widget', 'chart', 'chart', 'table', 'table', 'note', 'note', 'summary', 'footer']
+------------------------------
+
+Тест 7:
+Входные данные:
+print(get_child_tags("universes.xml"))
+
+Ожидаемый вывод:
+['galaxy', 'galaxy', 'blackhole']
+------------------------------
+

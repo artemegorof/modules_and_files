@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<festival>
+    <day date="2026-06-01">
+        <stage name="Main">
+            <slot time="18:00">
+                <artist>
+                    <name>Imagine Dragons</name>
+                    <country>USA</country>
+                </artist>
+                <setlist>
+                    <song>Believer</song>
+                    <song>Thunder</song>
+                </setlist>
+            </slot>
+            <slot time="20:00">
+                <artist>
+                    <name>Molchat Doma</name>
+                    <country>BY</country>
+                </artist>
+                <setlist>
+                    <song>Судно</song>
+                    <song>Звёзды</song>
+                    <song>Клетка</song>
+                </setlist>
+            </slot>
+        </stage>
+        <stage name="Indie">
+            <slot time="19:00">
+                <artist>
+                    <name>Alt-J</name>
+                    <country>UK</country>
+                </artist>
+                <setlist>
+                    <song>Breezeblocks</song>
+                </setlist>
+            </slot>
+        </stage>
+    </day>
+
+    <day date="2026-06-02">
+        <stage name="Main">
+            <slot time="18:30">
+                <artist>
+                    <name>Woodkid</name>
+                    <country>FR</country>
+                </artist>
+                <setlist>
+                    <song>Run Boy Run</song>
+                    <song>Iron</song>
+                </setlist>
+            </slot>
+        </stage>
+        <stage name="Electronic">
+            <slot time="21:00">
+                <artist>
+                    <name>Daft Punk</name>
+                    <country>FR</country>
+                </artist>
+                <setlist>
+                    <song>One More Time</song>
+                    <song>Harder Better Faster Stronger</song>
+                </setlist>
+            </slot>
+        </stage>
+    </day>
+</festival>
