@@ -1,0 +1,33 @@
+Тест 1:
+Входные данные:
+print(count_tags("test_1.xml"))
+
+Ожидаемый вывод:
+{'root': 1, 'item': 2, 'name': 2}
+
+------------------------------
+
+Тест 2:
+Входные данные:
+print(count_tags("test_2.xml"))
+
+Ожидаемый вывод:
+{'store': 1, 'order': 2, 'customer': 2, 'name': 2, 'city': 2, 'items': 2, 'item': 3, 'title': 3, 'qty': 3, 'payment': 2, 'total': 2, 'currency': 2}
+------------------------------
+
+Тест 3:
+Входные данные:
+print(count_tags("test_3.xml"))
+
+Ожидаемый вывод:
+{'courses': 1, 'category': 2, 'level': 3, 'course': 4, 'title': 4, 'duration': 4, 'rating': 4}
+------------------------------
+
+Тест 4:
+Входные данные:
+print(count_tags("test_4.xml"))
+
+Ожидаемый вывод:
+{'data': 1, 'block': 2, 'a': 2, 'b': 1, 'c': 1, 'd': 1}
+------------------------------
+

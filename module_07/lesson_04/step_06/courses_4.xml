@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<courses>
+    <category name="EmptyCategory">
+        <level value="beginner">
+        </level>
+        <level value="advanced">
+        </level>
+    </category>
+</courses>

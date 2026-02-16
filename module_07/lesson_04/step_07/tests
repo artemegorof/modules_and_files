@@ -1,0 +1,32 @@
+Тест 1:
+Входные данные:
+print(calculate_revenue("bookings_1.xml"))
+
+Ожидаемый вывод:
+{'Grand Hotel': 480, 'City Inn': 160}
+------------------------------
+
+Тест 2:
+Входные данные:
+print(calculate_revenue("bookings_2.xml"))
+
+Ожидаемый вывод:
+{'Sunrise Resort': 1000}
+------------------------------
+
+Тест 3:
+Входные данные:
+print(calculate_revenue("bookings_3.xml"))
+
+Ожидаемый вывод:
+{'Lake View': 1050, 'Mountain Lodge': 300}
+------------------------------
+
+Тест 4:
+Входные данные:
+print(calculate_revenue("bookings_4.xml"))
+
+Ожидаемый вывод:
+{'Grand Hotel': 1320, 'City Inn': 720, 'Sunrise Resort': 1600, 'Lake View': 900, 'Mountain Lodge': 900, 'Ocean Breeze': 1020}
+------------------------------
+

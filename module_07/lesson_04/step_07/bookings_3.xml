@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<bookings>
+    <booking>
+        <hotel>Lake View</hotel>
+        <nights>2</nights>
+        <price>150</price>
+    </booking>
+    <booking>
+        <hotel>Lake View</hotel>
+        <nights>4</nights>
+        <price>150</price>
+    </booking>
+    <booking>
+        <hotel>Mountain Lodge</hotel>
+        <nights>1</nights>
+        <price>300</price>
+    </booking>
+    <booking>
+        <hotel>Lake View</hotel>
+        <nights>1</nights>
+        <price>150</price>
+    </booking>
+</bookings>

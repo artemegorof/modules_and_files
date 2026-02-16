@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<marketplace>
+    <seller id="alpha">
+        <product sku="a1">
+            <reviews>
+                <review rating="5"><text>1</text></review>
+                <review rating="5"><text>2</text></review>
+                <review rating="5"><text>3</text></review>
+                <review rating="5"><text>4</text></review>
+                <review rating="5"><text>5</text></review>
+                <review rating="5"><text>6</text></review>
+                <review rating="5"><text>7</text></review>
+                <review rating="5"><text>8</text></review>
+                <review rating="5"><text>9</text></review>
+                <review rating="5"><text>10</text></review>
+            </reviews>
+        </product>
+    </seller>
+
+    <seller id="beta">
+        <product sku="b1">
+            <reviews>
+                <review rating="5"><text>x</text></review>
+                <review rating="5"><text>x</text></review>
+                <review rating="4"><text>x</text></review>
+                <review rating="4"><text>x</text></review>
+                <review rating="4"><text>x</text></review>
+                <review rating="4"><text>x</text></review>
+                <review rating="4"><text>x</text></review>
+                <review rating="5"><text>x</text></review>
+                <review rating="4"><text>x</text></review>
+                <review rating="4"><text>x</text></review>
+            </reviews>
+        </product>
+    </seller>
+
+    <seller id="gamma">
+        <product sku="g1">
+            <reviews>
+                <review rating="5"><text>ok</text></review>
+                <review rating="5"><text>ok</text></review>
+                <review rating="5"><text>ok</text></review>
+                <review rating="5"><text>ok</text></review>
+                <review rating="5"><text>ok</text></review>
+                <review rating="4"><text>ok</text></review>
+                <review rating="4"><text>ok</text></review>
+                <review rating="5"><text>ok</text></review>
+                <review rating="5"><text>ok</text></review>
+            </reviews>
+        </product>
+    </seller>
+</marketplace>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<itinerary>
+    <flight number="TEST42">
+        <segments>
+            <segment><from>A</from><to>B</to></segment>
+        </segments>
+        <passengers>
+            <passenger type="ADT"><fare><base>0.1</base><tax>0.2</tax></fare></passenger>
+            <passenger type="ADT"><fare><base>0.2</base><tax>0.2</tax></fare></passenger>
+            <passenger type="CHD"><fare><base>0.1</base><tax>0.1</tax></fare></passenger>
+        </passengers>
+    </flight>
+</itinerary>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<logistics>
+    <route>
+        <from>Yerevan</from>
+        <to>Tbilisi</to>
+        <weight>300</weight>
+    </route>
+    <route>
+        <from>Yerevan</from>
+        <to>Tbilisi</to>
+        <weight>700</weight>
+    </route>
+    <route>
+        <from>Yerevan</from>
+        <to>Batumi</to>
+        <weight>1200</weight>
+    </route>
+    <route>
+        <from>Yerevan</from>
+        <to>Tbilisi</to>
+        <weight>200</weight>
+    </route>
+</logistics>

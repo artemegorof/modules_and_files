@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<store>
+ <order>
+     <customer>
+         <name>Artem</name>
+         <city>Yerevan</city>
+     </customer>
+     <items>
+         <item>
+             <title>Keyboard</title>
+             <qty>1</qty>
+         </item>
+         <item>
+             <title>Mouse</title>
+             <qty>2</qty>
+         </item>
+     </items>
+     <payment>
+         <total>540</total>
+         <currency>AMD</currency>
+     </payment>
+ </order>
+ <order>
+     <customer>
+         <name>Alice</name>
+         <city>Gyumri</city>
+     </customer>
+     <items>
+         <item>
+             <title>USB-C Cable</title>
+             <qty>3</qty>
+         </item>
+     </items>
+     <payment>
+         <total>270</total>
+         <currency>AMD</currency>
+     </payment>
+ </order>
+</store>

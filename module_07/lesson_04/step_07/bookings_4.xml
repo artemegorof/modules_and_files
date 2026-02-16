@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<bookings>
+    <booking><hotel>Grand Hotel</hotel><nights>3</nights><price>120</price></booking>
+    <booking><hotel>City Inn</hotel><nights>2</nights><price>80</price></booking>
+    <booking><hotel>Sunrise Resort</hotel><nights>5</nights><price>200</price></booking>
+    <booking><hotel>Grand Hotel</hotel><nights>1</nights><price>120</price></booking>
+    <booking><hotel>Lake View</hotel><nights>2</nights><price>150</price></booking>
+    <booking><hotel>City Inn</hotel><nights>4</nights><price>80</price></booking>
+    <booking><hotel>Mountain Lodge</hotel><nights>1</nights><price>300</price></booking>
+    <booking><hotel>Sunrise Resort</hotel><nights>2</nights><price>200</price></booking>
+    <booking><hotel>Grand Hotel</hotel><nights>2</nights><price>120</price></booking>
+    <booking><hotel>Lake View</hotel><nights>1</nights><price>150</price></booking>
+    <booking><hotel>City Inn</hotel><nights>1</nights><price>80</price></booking>
+    <booking><hotel>Ocean Breeze</hotel><nights>3</nights><price>170</price></booking>
+    <booking><hotel>Ocean Breeze</hotel><nights>2</nights><price>170</price></booking>
+    <booking><hotel>Grand Hotel</hotel><nights>4</nights><price>120</price></booking>
+    <booking><hotel>Sunrise Resort</hotel><nights>1</nights><price>200</price></booking>
+    <booking><hotel>Mountain Lodge</hotel><nights>2</nights><price>300</price></booking>
+    <booking><hotel>Lake View</hotel><nights>3</nights><price>150</price></booking>
+    <booking><hotel>City Inn</hotel><nights>2</nights><price>80</price></booking>
+    <booking><hotel>Ocean Breeze</hotel><nights>1</nights><price>170</price></booking>
+    <booking><hotel>Grand Hotel</hotel><nights>1</nights><price>120</price></booking>
+</bookings>

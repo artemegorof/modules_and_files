@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<courses>
+    <category name="Python">
+        <level value="beginner">
+            <course active="true">
+                <title>Python с нуля</title>
+                <duration>40</duration>
+                <rating>4.8</rating>
+            </course>
+            <course active="false">
+                <title>Основы алгоритмов</title>
+                <duration>30</duration>
+                <rating>4.5</rating>
+            </course>
+            <course active="TRUE">
+                <title>Работа с файлами</title>
+                <duration>35</duration>
+                <rating>4.7</rating>
+            </course>
+        </level>
+        <level value="advanced">
+            <course active="FALSE">
+                <title>Метаклассы</title>
+                <duration>60</duration>
+                <rating>4.9</rating>
+            </course>
+            <course active="true">
+                <title>Python и Django</title>
+                <duration>50</duration>
+                <rating>4.9</rating>
+            </course>
+        </level>
+    </category>
+
+    <category name="Web">
+        <level value="beginner">
+            <course active="true">
+                <title>HTML и CSS</title>
+                <duration>25</duration>
+                <rating>4.6</rating>
+            </course>
+            <course active="FALSE">
+                <title>Основы SEO</title>
+                <duration>20</duration>
+                <rating>4.2</rating>
+            </course>
+        </level>
+        <level value="advanced">
+            <course active="TrUe">
+                <title>Django</title>
+                <duration>50</duration>
+                <rating>4.9</rating>
+            </course>
+            <course active="TRUE">
+                <title>FastAPI</title>
+                <duration>35</duration>
+                <rating>4.8</rating>
+            </course>
+            <course active="false">
+                <title>GraphQL</title>
+                <duration>30</duration>
+                <rating>4.4</rating>
+            </course>
+        </level>
+    </category>
+
+    <category name="Data">
+        <level value="beginner">
+            <course active="true">
+                <title>SQL с нуля</title>
+                <duration>20</duration>
+                <rating>4.4</rating>
+            </course>
+            <course active="TRUE">
+                <title>Pandas для анализа</title>
+                <duration>45</duration>
+                <rating>4.8</rating>
+            </course>
+        </level>
+        <level value="advanced">
+            <course active="FALSE">
+                <title>Big Data</title>
+                <duration>70</duration>
+                <rating>4.6</rating>
+            </course>
+        </level>
+    </category>
+</courses>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<marketplace>
+    <seller id="solo">
+        <product sku="p1">
+            <reviews>
+                <review rating="5"><text>Nice</text></review>
+                <review rating="5"><text>Nice</text></review>
+                <review rating="5"><text>Nice</text></review>
+                <review rating="5"><text>Nice</text></review>
+                <review rating="5"><text>Nice</text></review>
+                <review rating="5"><text>Nice</text></review>
+                <review rating="5"><text>Nice</text></review>
+                <review rating="5"><text>Nice</text></review>
+                <review rating="5"><text>Nice</text></review>
+                <review rating="4"><text>Ok</text></review>
+            </reviews>
+        </product>
+    </seller>
+</marketplace>

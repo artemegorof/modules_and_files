@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<itinerary>
+    <flight number="KQ200">
+        <segments>
+            <segment><from>NBO</from><to>MSA</to></segment>
+        </segments>
+        <passengers>
+            <passenger type="CHD"><fare><base>50</base><tax>5</tax></fare></passenger>
+            <passenger type="CHD"><fare><base>70</base><tax>7</tax></fare></passenger>
+        </passengers>
+    </flight>
+</itinerary>

@@ -1,0 +1,40 @@
+Тест 1:
+Входные данные:
+print(average_fare_by_passenger_type("flights_1.xml"))
+
+Ожидаемый вывод:
+{'ADT': 400.5, 'CHD': 220.0}
+------------------------------
+
+Тест 2:
+Входные данные:
+print(average_fare_by_passenger_type("flights_2.xml"))
+
+Ожидаемый вывод:
+{'ADT': 166.67, 'CHD': 90.0}
+------------------------------
+
+Тест 3:
+Входные данные:
+print(average_fare_by_passenger_type("flights_3.xml"))
+
+Ожидаемый вывод:
+{'CHD': 66.0}
+------------------------------
+
+Тест 4:
+Входные данные:
+print(average_fare_by_passenger_type("flights_4.xml"))
+
+Ожидаемый вывод:
+{'ADT': 0.35, 'CHD': 0.2}
+------------------------------
+
+Тест 5:
+Входные данные:
+print(average_fare_by_passenger_type("flights_5.xml"))
+
+Ожидаемый вывод:
+{'ADT': 384.29, 'CHD': 230.0}
+------------------------------
+

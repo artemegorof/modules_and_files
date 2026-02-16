@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<courses>
+    <category name="Music">
+        <level value="beginner">
+            <course><title>Гитара: первые аккорды</title></course>
+        </level>
+    </category>
+    <category name="Cooking">
+        <level value="beginner">
+            <course><title>Паста за 15 минут</title></course>
+            <course><title>Супы без ошибок</title></course>
+        </level>
+        <level value="advanced">
+            <course><title>Су-вид дома</title></course>
+        </level>
+    </category>
+</courses>

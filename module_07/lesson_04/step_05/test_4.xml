@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<data>
+    <block>
+        <a>1</a>
+        <b>2</b>
+        <c>
+            <d>3</d>
+        </c>
+    </block>
+    <block>
+        <a>4</a>
+    </block>
+</data>

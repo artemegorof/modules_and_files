@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<trips>
+    <trip>
+        <city>Yerevan</city>
+        <distance>3</distance>
+    </trip>
+    <trip>
+        <city>Yerevan</city>
+        <distance>7</distance>
+    </trip>
+    <trip>
+        <city>Yerevan</city>
+        <distance>10</distance>
+    </trip>
+</trips>

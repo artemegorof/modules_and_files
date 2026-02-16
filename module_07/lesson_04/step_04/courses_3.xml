@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<courses>
+ <category name="Web">
+     <level value="beginner">
+         <course active="true">
+             <title>HTML и CSS</title>
+             <duration>25</duration>
+             <rating>4.6</rating>
+         </course>
+     </level>
+     <level value="advanced">
+         <course active="TrUe">
+             <title>Django</title>
+             <duration>50</duration>
+             <rating>4.9</rating>
+         </course>
+         <course active="TRUE">
+             <title>FastAPI</title>
+             <duration>35</duration>
+             <rating>4.8</rating>
+         </course>
+     </level>
+ </category>
+</courses>

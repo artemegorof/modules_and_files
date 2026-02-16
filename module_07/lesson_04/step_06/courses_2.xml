@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<courses>
+    <category name="Design">
+        <level value="beginner">
+            <course><title>Основы типографики</title></course>
+            <course><title>Цвет и композиция</title></course>
+            <course><title>UX для новичков</title></course>
+        </level>
+        <level value="advanced">
+            <course><title>Дизайн-системы</title></course>
+            <course><title>Исследования пользователей</title></course>
+        </level>
+    </category>
+</courses>

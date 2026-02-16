@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<trips>
+    <trip>
+        <city>Rome</city>
+        <distance>20</distance>
+    </trip>
+    <trip>
+        <city>Berlin</city>
+        <distance>10</distance>
+    </trip>
+    <trip>
+        <city>Rome</city>
+        <distance>10</distance>
+    </trip>
+    <trip>
+        <city>Berlin</city>
+        <distance>30</distance>
+    </trip>
+    <trip>
+        <city>Madrid</city>
+        <distance>5</distance>
+    </trip>
+</trips>

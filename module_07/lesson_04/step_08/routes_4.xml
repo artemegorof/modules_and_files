@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<logistics>
+    <route>
+        <from>Tokyo</from>
+        <to>Kyoto</to>
+        <weight>100</weight>
+    </route>
+</logistics>

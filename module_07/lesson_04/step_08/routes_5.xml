@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<logistics>
+    <route><from>Berlin</from><to>Paris</to><weight>500</weight></route>
+    <route><from>Berlin</from><to>Paris</to><weight>700</weight></route>
+    <route><from>Berlin</from><to>Paris</to><weight>800</weight></route>
+
+    <route><from>Madrid</from><to>Rome</to><weight>900</weight></route>
+    <route><from>Madrid</from><to>Rome</to><weight>400</weight></route>
+    <route><from>Madrid</from><to>Rome</to><weight>300</weight></route>
+
+    <route><from>Yerevan</from><to>Tbilisi</to><weight>300</weight></route>
+    <route><from>Yerevan</from><to>Tbilisi</to><weight>450</weight></route>
+    <route><from>Yerevan</from><to>Tbilisi</to><weight>500</weight></route>
+    <route><from>Yerevan</from><to>Tbilisi</to><weight>250</weight></route>
+
+    <route><from>Lisbon</from><to>Porto</to><weight>600</weight></route>
+    <route><from>Lisbon</from><to>Porto</to><weight>500</weight></route>
+    <route><from>Lisbon</from><to>Porto</to><weight>200</weight></route>
+
+    <route><from>Oslo</from><to>Stockholm</to><weight>650</weight></route>
+    <route><from>Oslo</from><to>Stockholm</to><weight>650</weight></route>
+    <route><from>Oslo</from><to>Stockholm</to><weight>100</weight></route>
+
+    <route><from>Berlin</from><to>Prague</to><weight>1200</weight></route>
+    <route><from>Berlin</from><to>Prague</to><weight>200</weight></route>
+</logistics>

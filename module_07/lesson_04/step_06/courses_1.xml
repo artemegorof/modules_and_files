@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<courses>
+    <category name="Python">
+        <level value="beginner">
+            <course active="true">
+                <title>Python с нуля</title>
+            </course>
+            <course active="FALSE">
+                <title>Основы алгоритмов</title>
+            </course>
+        </level>
+        <level value="advanced">
+            <course active="true">
+                <title>Python и Django</title>
+            </course>
+        </level>
+    </category>
+</courses>

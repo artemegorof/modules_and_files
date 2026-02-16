@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<logistics>
+    <route>
+        <from>Oslo</from>
+        <to>Stockholm</to>
+        <weight>500</weight>
+    </route>
+    <route>
+        <from>Helsinki</from>
+        <to>Tallinn</to>
+        <weight>500</weight>
+    </route>
+    <route>
+        <from>Oslo</from>
+        <to>Stockholm</to>
+        <weight>200</weight>
+    </route>
+    <route>
+        <from>Helsinki</from>
+        <to>Tallinn</to>
+        <weight>200</weight>
+    </route>
+</logistics>

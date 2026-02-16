@@ -1,0 +1,44 @@
+Тест 1:
+Входные данные:
+get_active_courses("courses_1.xml")
+
+Ожидаемый вывод:
+Python с нуля — 40
+Python и Django — 50
+HTML и CSS — 25
+
+------------------------------
+
+Тест 2:
+Входные данные:
+get_active_courses("courses_2.xml")
+
+Ожидаемый вывод:
+SQL с нуля — 20
+------------------------------
+
+Тест 3:
+Входные данные:
+get_active_courses("courses_3.xml")
+
+Ожидаемый вывод:
+HTML и CSS — 25
+Django — 50
+FastAPI — 35
+------------------------------
+
+Тест 4:
+Входные данные:
+get_active_courses("courses_4.xml")
+
+Ожидаемый вывод:
+Python с нуля — 40
+Работа с файлами — 35
+Python и Django — 50
+HTML и CSS — 25
+Django — 50
+FastAPI — 35
+SQL с нуля — 20
+Pandas для анализа — 45
+------------------------------
+

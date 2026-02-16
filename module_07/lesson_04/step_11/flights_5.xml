@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<itinerary>
+    <flight number="LH001">
+        <segments>
+            <segment><from>FRA</from><to>LHR</to></segment>
+            <segment><from>LHR</from><to>JFK</to></segment>
+        </segments>
+        <passengers>
+            <passenger type="ADT"><fare><base>300</base><tax>50</tax></fare></passenger>   <!-- 350 -->
+            <passenger type="ADT"><fare><base>310</base><tax>50</tax></fare></passenger>   <!-- 360 -->
+            <passenger type="ADT"><fare><base>320</base><tax>50</tax></fare></passenger>   <!-- 370 -->
+            <passenger type="ADT"><fare><base>330</base><tax>50</tax></fare></passenger>   <!-- 380 -->
+            <passenger type="CHD"><fare><base>180</base><tax>20</tax></fare></passenger>   <!-- 200 -->
+            <passenger type="CHD"><fare><base>190</base><tax>20</tax></fare></passenger>   <!-- 210 -->
+            <passenger type="CHD"><fare><base>200</base><tax>20</tax></fare></passenger>   <!-- 220 -->
+        </passengers>
+    </flight>
+
+    <flight number="LH002">
+        <segments>
+            <segment><from>JFK</from><to>LAX</to></segment>
+        </segments>
+        <passengers>
+            <passenger type="ADT"><fare><base>350</base><tax>50</tax></fare></passenger>   <!-- 400 -->
+            <passenger type="ADT"><fare><base>360</base><tax>50</tax></fare></passenger>   <!-- 410 -->
+            <passenger type="ADT"><fare><base>370</base><tax>50</tax></fare></passenger>   <!-- 420 -->
+            <passenger type="CHD"><fare><base>210</base><tax>20</tax></fare></passenger>   <!-- 230 -->
+            <passenger type="CHD"><fare><base>220</base><tax>20</tax></fare></passenger>   <!-- 240 -->
+            <passenger type="CHD"><fare><base>230</base><tax>20</tax></fare></passenger>   <!-- 250 -->
+            <passenger type="CHD"><fare><base>240</base><tax>20</tax></fare></passenger>   <!-- 260 -->
+        </passengers>
+    </flight>
+</itinerary>

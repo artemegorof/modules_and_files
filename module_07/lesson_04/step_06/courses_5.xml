@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<courses>
+    <category name="Tech">
+        <level value="beginner">
+            <course><title>Компьютеры: база</title></course>
+            <course><title>Интернет без паники</title></course>
+            <course><title>Git для начинающих</title></course>
+        </level>
+        <level value="intermediate">
+            <course><title>Docker на пальцах</title></course>
+            <course><title>SQL в работе</title></course>
+        </level>
+        <level value="advanced">
+            <course><title>Системный дизайн</title></course>
+            <course><title>Распределённые очереди</title></course>
+            <course><title>Оптимизация производительности</title></course>
+        </level>
+    </category>
+
+    <category name="Health">
+        <level value="beginner">
+            <course><title>Сон и восстановление</title></course>
+            <course><title>Питание без крайностей</title></course>
+        </level>
+        <level value="advanced">
+            <course><title>Планирование тренировок</title></course>
+            <course><title>Выносливость без бега</title></course>
+        </level>
+    </category>
+</courses>
