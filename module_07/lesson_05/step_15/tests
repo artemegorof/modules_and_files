@@ -1,0 +1,122 @@
+Тест 1:
+Входные данные:
+departments = {
+    "IT": ["Anna", "Leo"],
+    "HR": ["Maria"]
+}
+
+export_company_structure('company1.xml', departments)
+
+with open('company1.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<company>
+  <department name="IT">
+    <employee>Anna</employee>
+    <employee>Leo</employee>
+  </department>
+  <department name="HR">
+    <employee>Maria</employee>
+  </department>
+</company>
+
+------------------------------
+
+Тест 2:
+Входные данные:
+departments = {
+    "Sales": ["John", "Emma", "Lucas"],
+    "Support": ["Olivia"],
+    "Finance": ["Noah", "Mia"]
+}
+
+export_company_structure('company2.xml', departments)
+
+with open('company2.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<company>
+  <department name="Sales">
+    <employee>John</employee>
+    <employee>Emma</employee>
+    <employee>Lucas</employee>
+  </department>
+  <department name="Support">
+    <employee>Olivia</employee>
+  </department>
+  <department name="Finance">
+    <employee>Noah</employee>
+    <employee>Mia</employee>
+  </department>
+</company>
+
+------------------------------
+
+Тест 3:
+Входные данные:
+departments = {
+    "Engineering": ["John", "Emma", "Lucas", "Olivia", "Noah", "Mia", "James", "Sophia"],
+    "Product": ["Henry", "Amelia", "Daniel", "Chloe", "Ethan"],
+    "Design": ["Isabella", "Ava", "Charlotte", "Lily"],
+    "Support": ["Michael", "Grace", "Samuel", "Zoe", "Jack", "Emily"],
+    "Security": ["Logan", "Ella", "Jacob"],
+    "Operations": ["Benjamin", "Harper", "Matthew", "Victoria", "David", "Aria", "Joseph"],
+}
+
+export_company_structure('company3.xml', departments)
+
+with open('company3.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<company>
+  <department name="Engineering">
+    <employee>John</employee>
+    <employee>Emma</employee>
+    <employee>Lucas</employee>
+    <employee>Olivia</employee>
+    <employee>Noah</employee>
+    <employee>Mia</employee>
+    <employee>James</employee>
+    <employee>Sophia</employee>
+  </department>
+  <department name="Product">
+    <employee>Henry</employee>
+    <employee>Amelia</employee>
+    <employee>Daniel</employee>
+    <employee>Chloe</employee>
+    <employee>Ethan</employee>
+  </department>
+  <department name="Design">
+    <employee>Isabella</employee>
+    <employee>Ava</employee>
+    <employee>Charlotte</employee>
+    <employee>Lily</employee>
+  </department>
+  <department name="Support">
+    <employee>Michael</employee>
+    <employee>Grace</employee>
+    <employee>Samuel</employee>
+    <employee>Zoe</employee>
+    <employee>Jack</employee>
+    <employee>Emily</employee>
+  </department>
+  <department name="Security">
+    <employee>Logan</employee>
+    <employee>Ella</employee>
+    <employee>Jacob</employee>
+  </department>
+  <department name="Operations">
+    <employee>Benjamin</employee>
+    <employee>Harper</employee>
+    <employee>Matthew</employee>
+    <employee>Victoria</employee>
+    <employee>David</employee>
+    <employee>Aria</employee>
+    <employee>Joseph</employee>
+  </department>
+</company>
+------------------------------
+

@@ -1,0 +1,102 @@
+Тест 1:
+Входные данные:
+orders = [
+    {"id": 101, "amount": 250, "currency": "USD"},
+    {"id": 102, "amount": 400, "currency": "EUR"}
+]
+
+export_orders('orders1.xml', orders)
+
+with open('orders1.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<orders>
+  <order id="101">
+    <amount>250</amount>
+    <currency>USD</currency>
+  </order>
+  <order id="102">
+    <amount>400</amount>
+    <currency>EUR</currency>
+  </order>
+</orders>
+
+------------------------------
+
+Тест 2:
+Входные данные:
+orders = [
+    {"id": 1001, "amount": 120, "currency": "USD"},
+    {"id": 1002, "amount": 560.75, "currency": "EUR"},
+    {"id": 1003, "amount": 999.99, "currency": "USD"},
+    {"id": 1004, "amount": 15, "currency": "GBP"},
+    {"id": 1005, "amount": 42.42, "currency": "EUR"},
+    {"id": 1006, "amount": 2000, "currency": "JPY"},
+    {"id": 1007, "amount": 87.3, "currency": "USD"},
+    {"id": 1008, "amount": 310.1, "currency": "EUR"},
+    {"id": 1009, "amount": 5, "currency": "USD"},
+    {"id": 1010, "amount": 150.5, "currency": "GBP"},
+    {"id": 1011, "amount": 780, "currency": "EUR"},
+    {"id": 1012, "amount": 60, "currency": "USD"}
+]
+
+export_orders('orders1.xml', orders)
+
+with open('orders1.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+
+Ожидаемый вывод:
+<orders>
+  <order id="1001">
+    <amount>120</amount>
+    <currency>USD</currency>
+  </order>
+  <order id="1002">
+    <amount>560.75</amount>
+    <currency>EUR</currency>
+  </order>
+  <order id="1003">
+    <amount>999.99</amount>
+    <currency>USD</currency>
+  </order>
+  <order id="1004">
+    <amount>15</amount>
+    <currency>GBP</currency>
+  </order>
+  <order id="1005">
+    <amount>42.42</amount>
+    <currency>EUR</currency>
+  </order>
+  <order id="1006">
+    <amount>2000</amount>
+    <currency>JPY</currency>
+  </order>
+  <order id="1007">
+    <amount>87.3</amount>
+    <currency>USD</currency>
+  </order>
+  <order id="1008">
+    <amount>310.1</amount>
+    <currency>EUR</currency>
+  </order>
+  <order id="1009">
+    <amount>5</amount>
+    <currency>USD</currency>
+  </order>
+  <order id="1010">
+    <amount>150.5</amount>
+    <currency>GBP</currency>
+  </order>
+  <order id="1011">
+    <amount>780</amount>
+    <currency>EUR</currency>
+  </order>
+  <order id="1012">
+    <amount>60</amount>
+    <currency>USD</currency>
+  </order>
+</orders>
+------------------------------
+

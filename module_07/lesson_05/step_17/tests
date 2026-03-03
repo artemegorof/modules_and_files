@@ -1,0 +1,164 @@
+Тест 1:
+Входные данные:
+clients = [
+    {"client": "Warren Buffett", "amount": 120, "currency": "USD"},
+    {"client": "Warren Buffett", "amount": 80, "currency": "USD"},
+    {"client": "Tony Stark", "amount": 200, "currency": "EUR"},
+]
+
+export_financial_report('report1.xml', clients)
+
+with open('report1.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<report>
+  <client name="Warren Buffett">
+    <total>200</total>
+    <currency>USD</currency>
+    <transactions>
+      <transaction>120</transaction>
+      <transaction>80</transaction>
+    </transactions>
+  </client>
+  <client name="Tony Stark">
+    <total>200</total>
+    <currency>EUR</currency>
+    <transactions>
+      <transaction>200</transaction>
+    </transactions>
+  </client>
+</report>
+
+------------------------------
+
+Тест 2:
+Входные данные:
+clients = [
+    {"client": "Bruce Wayne", "amount": 500, "currency": "USD"},
+    {"client": "Scrooge McDuck", "amount": 300, "currency": "USD"},
+    {"client": "Bruce Wayne", "amount": 250, "currency": "USD"},
+    {"client": "Scrooge McDuck", "amount": 700, "currency": "USD"},
+    {"client": "Cathie Wood", "amount": 1000, "currency": "EUR"},
+]
+
+export_financial_report('report2.xml', clients)
+
+with open('report2.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<report>
+  <client name="Bruce Wayne">
+    <total>750</total>
+    <currency>USD</currency>
+    <transactions>
+      <transaction>500</transaction>
+      <transaction>250</transaction>
+    </transactions>
+  </client>
+  <client name="Scrooge McDuck">
+    <total>1000</total>
+    <currency>USD</currency>
+    <transactions>
+      <transaction>300</transaction>
+      <transaction>700</transaction>
+    </transactions>
+  </client>
+  <client name="Cathie Wood">
+    <total>1000</total>
+    <currency>EUR</currency>
+    <transactions>
+      <transaction>1000</transaction>
+    </transactions>
+  </client>
+</report>
+------------------------------
+
+Тест 3:
+Входные данные:
+clients = [
+    {"client": "Warren Buffett", "amount": 120, "currency": "USD"},
+    {"client": "Ray Dalio", "amount": 50, "currency": "USD"},
+    {"client": "Warren Buffett", "amount": 80, "currency": "USD"},
+    {"client": "Tony Stark", "amount": 200, "currency": "EUR"},
+    {"client": "Tony Stark", "amount": 150, "currency": "EUR"},
+    {"client": "Benjamin Graham", "amount": 300, "currency": "USD"},
+    {"client": "Benjamin Graham", "amount": 45, "currency": "USD"},
+    {"client": "Scrooge McDuck", "amount": 700, "currency": "USD"},
+    {"client": "Scrooge McDuck", "amount": 5, "currency": "USD"},
+    {"client": "Cathie Wood", "amount": 999, "currency": "EUR"},
+    {"client": "Ray Dalio", "amount": 75, "currency": "USD"},
+    {"client": "Ray Dalio", "amount": 25, "currency": "USD"},
+    {"client": "Warren Buffett", "amount": 10, "currency": "USD"},
+    {"client": "Tony Stark", "amount": 50, "currency": "EUR"},
+    {"client": "Benjamin Graham", "amount": 155, "currency": "USD"},
+    {"client": "Cathie Wood", "amount": 1, "currency": "EUR"},
+    {"client": "Scrooge McDuck", "amount": 295, "currency": "USD"},
+]
+
+export_financial_report('report3.xml', clients)
+
+with open('report3.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+
+Ожидаемый вывод:
+<report>
+  <client name="Warren Buffett">
+    <total>210</total>
+    <currency>USD</currency>
+    <transactions>
+      <transaction>120</transaction>
+      <transaction>80</transaction>
+      <transaction>10</transaction>
+    </transactions>
+  </client>
+  <client name="Ray Dalio">
+    <total>150</total>
+    <currency>USD</currency>
+    <transactions>
+      <transaction>50</transaction>
+      <transaction>75</transaction>
+      <transaction>25</transaction>
+    </transactions>
+  </client>
+  <client name="Tony Stark">
+    <total>400</total>
+    <currency>EUR</currency>
+    <transactions>
+      <transaction>200</transaction>
+      <transaction>150</transaction>
+      <transaction>50</transaction>
+    </transactions>
+  </client>
+  <client name="Benjamin Graham">
+    <total>500</total>
+    <currency>USD</currency>
+    <transactions>
+      <transaction>300</transaction>
+      <transaction>45</transaction>
+      <transaction>155</transaction>
+    </transactions>
+  </client>
+  <client name="Scrooge McDuck">
+    <total>1000</total>
+    <currency>USD</currency>
+    <transactions>
+      <transaction>700</transaction>
+      <transaction>5</transaction>
+      <transaction>295</transaction>
+    </transactions>
+  </client>
+  <client name="Cathie Wood">
+    <total>1000</total>
+    <currency>EUR</currency>
+    <transactions>
+      <transaction>999</transaction>
+      <transaction>1</transaction>
+    </transactions>
+  </client>
+</report>
+
+------------------------------
+

@@ -1,0 +1,165 @@
+Тест 1:
+Входные данные:
+contacts = [
+    {"name": "Anna", "phone": "+374777777", "city": "Yerevan"},
+    {"name": "Leo", "phone": "+374999999", "city": "Gyumri"}
+]
+
+export_contacts('contacts1.xml', contacts)
+
+with open('contacts1.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<contacts>
+  <contact>
+    <name>Anna</name>
+    <phone>+374777777</phone>
+    <city>Yerevan</city>
+  </contact>
+  <contact>
+    <name>Leo</name>
+    <phone>+374999999</phone>
+    <city>Gyumri</city>
+  </contact>
+</contacts>
+------------------------------
+
+Тест 2:
+Входные данные:
+contacts = [
+    {"name": "Артём", "phone": "+374(77)000-000", "city": "Ереван"},
+    {"name": "Света", "phone": "+7 900 111-22-33", "city": "Пенза"},
+    {"name": "Neo", "phone": "N/A", "city": "Zion"}
+]
+
+export_contacts('contacts2.xml', contacts)
+
+with open('contacts2.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<contacts>
+  <contact>
+    <name>Артём</name>
+    <phone>+374(77)000-000</phone>
+    <city>Ереван</city>
+  </contact>
+  <contact>
+    <name>Света</name>
+    <phone>+7 900 111-22-33</phone>
+    <city>Пенза</city>
+  </contact>
+  <contact>
+    <name>Neo</name>
+    <phone>N/A</phone>
+    <city>Zion</city>
+  </contact>
+</contacts>
+------------------------------
+
+Тест 3:
+Входные данные:
+contacts = [
+    {"name": "John", "phone": "+12025550101", "city": "New York"},
+    {"name": "Emma", "phone": "+442071234567", "city": "London"},
+    {"name": "Lucas", "phone": "+33123456789", "city": "Paris"},
+    {"name": "Olivia", "phone": "+49301234567", "city": "Berlin"},
+    {"name": "Noah", "phone": "+390612345678", "city": "Rome"},
+    {"name": "Liam", "phone": "+61234567890", "city": "Sydney"},
+    {"name": "Ava", "phone": "+81312345678", "city": "Tokyo"},
+    {"name": "Sophia", "phone": "+551199999999", "city": "Sao Paulo"},
+    {"name": "Mason", "phone": "+5215512345678", "city": "Mexico City"},
+    {"name": "Isabella", "phone": "+14165551234", "city": "Toronto"},
+    {"name": "Ethan", "phone": "+35311234567", "city": "Dublin"},
+    {"name": "Mia", "phone": "+34911234567", "city": "Madrid"},
+    {"name": "James", "phone": "+61123456789", "city": "Melbourne"},
+    {"name": "Charlotte", "phone": "+33198765432", "city": "Lyon"},
+    {"name": "Benjamin", "phone": "+390212345678", "city": "Milan"}
+]
+export_contacts('contacts3.xml', contacts)
+
+with open('contacts3.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<contacts>
+  <contact>
+    <name>John</name>
+    <phone>+12025550101</phone>
+    <city>New York</city>
+  </contact>
+  <contact>
+    <name>Emma</name>
+    <phone>+442071234567</phone>
+    <city>London</city>
+  </contact>
+  <contact>
+    <name>Lucas</name>
+    <phone>+33123456789</phone>
+    <city>Paris</city>
+  </contact>
+  <contact>
+    <name>Olivia</name>
+    <phone>+49301234567</phone>
+    <city>Berlin</city>
+  </contact>
+  <contact>
+    <name>Noah</name>
+    <phone>+390612345678</phone>
+    <city>Rome</city>
+  </contact>
+  <contact>
+    <name>Liam</name>
+    <phone>+61234567890</phone>
+    <city>Sydney</city>
+  </contact>
+  <contact>
+    <name>Ava</name>
+    <phone>+81312345678</phone>
+    <city>Tokyo</city>
+  </contact>
+  <contact>
+    <name>Sophia</name>
+    <phone>+551199999999</phone>
+    <city>Sao Paulo</city>
+  </contact>
+  <contact>
+    <name>Mason</name>
+    <phone>+5215512345678</phone>
+    <city>Mexico City</city>
+  </contact>
+  <contact>
+    <name>Isabella</name>
+    <phone>+14165551234</phone>
+    <city>Toronto</city>
+  </contact>
+  <contact>
+    <name>Ethan</name>
+    <phone>+35311234567</phone>
+    <city>Dublin</city>
+  </contact>
+  <contact>
+    <name>Mia</name>
+    <phone>+34911234567</phone>
+    <city>Madrid</city>
+  </contact>
+  <contact>
+    <name>James</name>
+    <phone>+61123456789</phone>
+    <city>Melbourne</city>
+  </contact>
+  <contact>
+    <name>Charlotte</name>
+    <phone>+33198765432</phone>
+    <city>Lyon</city>
+  </contact>
+  <contact>
+    <name>Benjamin</name>
+    <phone>+390212345678</phone>
+    <city>Milan</city>
+  </contact>
+</contacts>
+
+------------------------------
+

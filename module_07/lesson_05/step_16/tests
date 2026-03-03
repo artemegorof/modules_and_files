@@ -1,0 +1,176 @@
+Тест 1:
+Входные данные:
+drivers = [
+    {"driver": "Batman", "rating": 5},
+    {"driver": "Batman", "rating": 4},
+    {"driver": "Spider-Man", "rating": 3}
+]
+
+export_driver_ratings('drivers1.xml', drivers)
+
+with open('drivers1.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+
+Ожидаемый вывод:
+<drivers>
+  <driver name="Batman">
+    <avg_rating>4.5</avg_rating>
+    <reviews>2</reviews>
+  </driver>
+  <driver name="Spider-Man">
+    <avg_rating>3.0</avg_rating>
+    <reviews>1</reviews>
+  </driver>
+</drivers>
+------------------------------
+
+Тест 2:
+Входные данные:
+drivers = [
+    {"driver": "Iron Man", "rating": 5},
+    {"driver": "Iron Man", "rating": 5},
+    {"driver": "Iron Man", "rating": 4},
+    {"driver": "Hulk", "rating": 2},
+    {"driver": "Hulk", "rating": 3},
+    {"driver": "Doctor Strange", "rating": 5},
+    {"driver": "Doctor Strange", "rating": 4},
+]
+
+export_driver_ratings('drivers2.xml', drivers)
+
+with open('drivers2.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<drivers>
+  <driver name="Iron Man">
+    <avg_rating>4.7</avg_rating>
+    <reviews>3</reviews>
+  </driver>
+  <driver name="Hulk">
+    <avg_rating>2.5</avg_rating>
+    <reviews>2</reviews>
+  </driver>
+  <driver name="Doctor Strange">
+    <avg_rating>4.5</avg_rating>
+    <reviews>2</reviews>
+  </driver>
+</drivers>
+
+------------------------------
+
+Тест 3:
+Входные данные:
+drivers = [
+    {"driver": "Wolverine", "rating": 4},
+    {"driver": "Wolverine", "rating": 4},
+    {"driver": "Wolverine", "rating": 4},
+    {"driver": "Deadpool", "rating": 5},
+    {"driver": "Deadpool", "rating": 1},
+    {"driver": "Deadpool", "rating": 5},
+    {"driver": "Deadpool", "rating": 5},
+    {"driver": "Storm", "rating": 3},
+]
+
+export_driver_ratings('drivers3.xml', drivers)
+
+with open('drivers3.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<drivers>
+  <driver name="Wolverine">
+    <avg_rating>4.0</avg_rating>
+    <reviews>3</reviews>
+  </driver>
+  <driver name="Deadpool">
+    <avg_rating>4.0</avg_rating>
+    <reviews>4</reviews>
+  </driver>
+  <driver name="Storm">
+    <avg_rating>3.0</avg_rating>
+    <reviews>1</reviews>
+  </driver>
+</drivers>
+
+------------------------------
+
+Тест 4:
+Входные данные:
+drivers = [
+    {"driver": "Batman", "rating": 5},
+    {"driver": "Batman", "rating": 4},
+    {"driver": "Batman", "rating": 5},
+    {"driver": "Batman", "rating": 4},
+    {"driver": "Batman", "rating": 5},
+    {"driver": "Spider-Man", "rating": 5},
+    {"driver": "Spider-Man", "rating": 5},
+    {"driver": "Spider-Man", "rating": 4},
+    {"driver": "Spider-Man", "rating": 4},
+    {"driver": "Spider-Man", "rating": 5},
+    {"driver": "Iron Man", "rating": 3},
+    {"driver": "Iron Man", "rating": 4},
+    {"driver": "Iron Man", "rating": 4},
+    {"driver": "Iron Man", "rating": 5},
+    {"driver": "Iron Man", "rating": 2},
+    {"driver": "Doctor Strange", "rating": 5},
+    {"driver": "Doctor Strange", "rating": 4},
+    {"driver": "Doctor Strange", "rating": 4},
+    {"driver": "Doctor Strange", "rating": 5},
+    {"driver": "Doctor Strange", "rating": 5},
+    {"driver": "Hulk", "rating": 1},
+    {"driver": "Hulk", "rating": 2},
+    {"driver": "Hulk", "rating": 2},
+    {"driver": "Hulk", "rating": 3},
+    {"driver": "Hulk", "rating": 4},
+    {"driver": "Wolverine", "rating": 4},
+    {"driver": "Wolverine", "rating": 5},
+    {"driver": "Wolverine", "rating": 5},
+    {"driver": "Wolverine", "rating": 4},
+    {"driver": "Wolverine", "rating": 4},
+    {"driver": "Deadpool", "rating": 5},
+    {"driver": "Deadpool", "rating": 5},
+    {"driver": "Deadpool", "rating": 5},
+    {"driver": "Deadpool", "rating": 2},
+    {"driver": "Deadpool", "rating": 5},
+]
+
+export_driver_ratings('drivers4.xml', drivers)
+
+with open('drivers4.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<drivers>
+  <driver name="Batman">
+    <avg_rating>4.6</avg_rating>
+    <reviews>5</reviews>
+  </driver>
+  <driver name="Spider-Man">
+    <avg_rating>4.6</avg_rating>
+    <reviews>5</reviews>
+  </driver>
+  <driver name="Iron Man">
+    <avg_rating>3.6</avg_rating>
+    <reviews>5</reviews>
+  </driver>
+  <driver name="Doctor Strange">
+    <avg_rating>4.6</avg_rating>
+    <reviews>5</reviews>
+  </driver>
+  <driver name="Hulk">
+    <avg_rating>2.4</avg_rating>
+    <reviews>5</reviews>
+  </driver>
+  <driver name="Wolverine">
+    <avg_rating>4.4</avg_rating>
+    <reviews>5</reviews>
+  </driver>
+  <driver name="Deadpool">
+    <avg_rating>4.4</avg_rating>
+    <reviews>5</reviews>
+  </driver>
+</drivers>
+------------------------------
+

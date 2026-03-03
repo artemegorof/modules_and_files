@@ -1,0 +1,90 @@
+Тест 1:
+Входные данные:
+errors = [
+    "File not found",
+    "Timeout error",
+    "Permission denied"
+]
+
+save_errors('errors1.xml', errors)
+
+with open('errors1.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<errors>
+  <error>File not found</error>
+  <error>Timeout error</error>
+  <error>Permission denied</error>
+</errors>
+
+------------------------------
+
+Тест 2:
+Входные данные:
+errors = [
+    "Ошибка доступа: /var/data",
+    "Слишком длинный путь к файлу",
+    "Кодировка не поддерживается: cp1251",
+    "Database connection lost",
+    "Invalid token",
+    "Too many requests",
+    "Cache miss"
+]
+
+save_errors('errors2.xml', errors)
+
+with open('errors2.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<errors>
+  <error>Ошибка доступа: /var/data</error>
+  <error>Слишком длинный путь к файлу</error>
+  <error>Кодировка не поддерживается: cp1251</error>
+  <error>Database connection lost</error>
+  <error>Invalid token</error>
+  <error>Too many requests</error>
+  <error>Cache miss</error>
+</errors>
+------------------------------
+
+Тест 3:
+Входные данные:
+errors = [
+    "E001: Failed to load config",
+    "E014: Timeout while reading socket",
+    "E020: Permission denied",
+    "E033: Unexpected EOF",
+    "E041: Invalid JSON payload",
+    "E052: Retry limit exceeded",
+    "E060: Disk is full",
+    "E071: DNS lookup failed",
+    "E085: Unauthorized access",
+    "E099: Service unavailable",
+    "E105: Broken pipe",
+    "E118: Rate limit reached"
+]
+
+save_errors('errors3.xml', errors)
+
+with open('errors3.xml', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+Ожидаемый вывод:
+<errors>
+  <error>E001: Failed to load config</error>
+  <error>E014: Timeout while reading socket</error>
+  <error>E020: Permission denied</error>
+  <error>E033: Unexpected EOF</error>
+  <error>E041: Invalid JSON payload</error>
+  <error>E052: Retry limit exceeded</error>
+  <error>E060: Disk is full</error>
+  <error>E071: DNS lookup failed</error>
+  <error>E085: Unauthorized access</error>
+  <error>E099: Service unavailable</error>
+  <error>E105: Broken pipe</error>
+  <error>E118: Rate limit reached</error>
+</errors>
+------------------------------
+
